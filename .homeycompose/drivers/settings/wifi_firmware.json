@@ -1,0 +1,11 @@
+{
+  "type": "label",
+  "label": {
+    "en": "Wireless firmware"
+  },
+  "hint": {
+    "en": "Firmware version of the wireless unit",
+    "nl": "Firmware versie van de wireless unit"
+  },
+  "value": "-"
+}

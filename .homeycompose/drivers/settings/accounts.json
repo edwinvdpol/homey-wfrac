@@ -1,0 +1,12 @@
+{
+  "type": "label",
+  "label": {
+    "en": "Number of accounts",
+    "nl": "Aantal accounts"
+  },
+  "hint": {
+    "en": "Number of registered accounts on the device",
+    "nl": "Aantal geregistreerde accounts op het apparaat"
+  },
+  "value": "-"
+}

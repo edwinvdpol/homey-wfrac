@@ -778,8 +778,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Information",
-            "nl": "Informatie"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
@@ -794,7 +794,50 @@
                 "nl": "Aantal geregistreerde accounts op het apparaat"
               },
               "value": "-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Network",
+            "nl": "Netwerk"
+          },
+          "children": [
+            {
+              "id": "ip_address",
+              "type": "label",
+              "label": {
+                "en": "IP address",
+                "nl": "IP adres"
+              },
+              "hint": {
+                "en": "IP address of the device",
+                "nl": "Netwerk IP adres van het apparaat"
+              },
+              "value": "-"
             },
+            {
+              "id": "port",
+              "type": "label",
+              "label": {
+                "en": "Port",
+                "nl": "Poort"
+              },
+              "hint": {
+                "en": "Port number used for communication",
+                "nl": "Poortnummer die gebruikt wordt voor communicatie"
+              },
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Software"
+          },
+          "children": [
             {
               "id": "wifi_firmware",
               "type": "label",

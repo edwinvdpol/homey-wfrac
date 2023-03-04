@@ -1,0 +1,12 @@
+{
+  "type": "label",
+  "label": {
+    "en": "IP address",
+    "nl": "IP adres"
+  },
+  "hint": {
+    "en": "IP address of the device",
+    "nl": "Netwerk IP adres van het apparaat"
+  },
+  "value": "-"
+}
