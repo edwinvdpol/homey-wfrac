@@ -171,42 +171,48 @@ class WFRACDevice extends Device {
   async onCapabilityFanSpeed(value) {
     this.log(`Fan speed changed to '${value}'`);
 
-    await this.updateDevice('airFlow', AirFlowNames[value]);
+    await this.updateDevice({ airFlow: AirFlowNames[value] });
   }
 
   // Horizontal position capability changed
   async onCapabilityHorizontalPosition(value) {
     this.log(`Horizontal position changed to '${value}'`);
 
-    await this.updateDevice('windDirectionLR', HorizontalPositionNames[value]);
+    await this.updateDevice({
+      windDirectionLR: HorizontalPositionNames[value],
+      entrust: false,
+    });
   }
 
   // On/off capability changed
   async onCapabilityOnOff(value) {
     this.log(`Operation changed to '${value}'`);
 
-    await this.updateDevice('operation', value);
+    await this.updateDevice({ operation: value });
   }
 
   // Operating mode capability changed
   async onCapabilityOperatingMode(value) {
     this.log(`Operating mode changed to '${value}'`);
 
-    await this.updateDevice('operationMode', OperationModeNames[value]);
+    await this.updateDevice({ operationMode: OperationModeNames[value] });
   }
 
   // Target temperature capability changed
   async onCapabilityTargetTemperature(value) {
     this.log(`Target temperature changed to '${value}°C'`);
 
-    await this.updateDevice('presetTemp', value);
+    await this.updateDevice({ presetTemp: value });
   }
 
   // Vertical position capability changed
   async onCapabilityVerticalPosition(value) {
     this.log(`Vertical position changed to '${value}'`);
 
-    await this.updateDevice('windDirectionUD', VerticalPositionNames[value]);
+    await this.updateDevice({
+      windDirectionUD: VerticalPositionNames[value],
+      entrust: false,
+    });
   }
 
   /*
