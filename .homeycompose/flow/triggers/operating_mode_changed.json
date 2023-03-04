@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Operating mode changed",
+    "nl": "Werkingsmodus is veranderd"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

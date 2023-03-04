@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Horizontal airflow changed",
+    "nl": "Horizontale luchtstroom is veranderd"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

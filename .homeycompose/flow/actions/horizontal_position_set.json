@@ -1,0 +1,85 @@
+{
+  "title": {
+    "en": "Set horizontal airflow",
+    "nl": "Zet horizontale luchtstroom"
+  },
+  "titleFormatted": {
+    "en": "Set horizontal airflow to [[position]]",
+    "nl": "Zet horizontale luchtstroom naar [[position]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "title": {
+        "en": "Position",
+        "nl": "Positie"
+      },
+      "name": "position",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "ll",
+          "title": {
+            "en": "Left - Left",
+            "nl": "Link - Links"
+          }
+        },
+        {
+          "id": "lc",
+          "title": {
+            "en": "Left - Center",
+            "nl": "Links - Midden"
+          }
+        },
+        {
+          "id": "cc",
+          "title": {
+            "en": "Center - Center",
+            "nl": "Midden - Midden"
+          }
+        },
+        {
+          "id": "cr",
+          "title": {
+            "en": "Center - Right",
+            "nl": "Midden - Rechts"
+          }
+        },
+        {
+          "id": "rr",
+          "title": {
+            "en": "Right - Right",
+            "nl": "Rechts - Rechts"
+          }
+        },
+        {
+          "id": "lr",
+          "title": {
+            "en": "Left - Right",
+            "nl": "Links - Rechts"
+          }
+        },
+        {
+          "id": "rl",
+          "title": {
+            "en": "Right - Left",
+            "nl": "Rechts - Links"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

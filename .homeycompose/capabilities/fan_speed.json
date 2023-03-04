@@ -1,0 +1,50 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Fan speed",
+    "nl": "Ventilatorsnelheid"
+  },
+  "desc": {
+    "en": "Current position of the fan speed",
+    "nl": "Huidige stand van de ventilatorsnelheid"
+  },
+  "values": [
+    {
+      "id": "auto",
+      "title": {
+        "en": "Auto"
+      }
+    },
+    {
+      "id": "lowest",
+      "title": {
+        "en": "Lowest",
+        "nl": "Laagste"
+      }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "nl": "Laag"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "nl": "Hoog"
+      }
+    },
+    {
+      "id": "highest",
+      "title": {
+        "en": "Highest",
+        "nl": "Hoogste"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker"
+}

@@ -1,0 +1,50 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Vertical airflow",
+    "nl": "Verticale luchtstroom"
+  },
+  "desc": {
+    "en": "Current position of the vertical airflow",
+    "nl": "Huidige stand van de verticale luchtstroom"
+  },
+  "values": [
+    {
+      "id": "auto",
+      "title": {
+        "en": "Auto"
+      }
+    },
+    {
+      "id": "highest",
+      "title": {
+        "en": "Highest",
+        "nl": "Hoogste"
+      }
+    },
+    {
+      "id": "middle",
+      "title": {
+        "en": "Middle",
+        "nl": "Midden"
+      }
+    },
+    {
+      "id": "normal",
+      "title": {
+        "en": "Normal",
+        "nl": "Normaal"
+      }
+    },
+    {
+      "id": "lowest",
+      "title": {
+        "en": "Lowest",
+        "nl": "Laagste"
+      }
+    }
+  ],
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker"
+}

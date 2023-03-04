@@ -1,0 +1,68 @@
+{
+  "id": "com.mhi.wfrac",
+  "version": "1.0.0",
+  "compatibility": ">=7.4.0",
+  "platforms": [
+    "local"
+  ],
+  "sdk": 3,
+  "brandColor": "#E60013",
+  "name": {
+    "en": "Mitsubishi WF-RAC"
+  },
+  "description": {
+    "en": "Cooling, heating and ventilation",
+    "nl": "Koeling, verwarming en ventilatie"
+  },
+  "category": [
+    "climate"
+  ],
+  "tags": {
+    "en": [
+      "mitsubishi",
+      "heavy",
+      "industries",
+      "mhi",
+      "wifi",
+      "wi-fi",
+      "module",
+      "airco",
+      "wfrac",
+      "wf-rac",
+      "remote",
+      "climate",
+      "control"
+    ]
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/77116"
+  },
+  "homeyCommunityTopicId": 77116,
+  "homepage": "https://www.mhi.com",
+  "support": "mailto:developer@edwinvandepol.nl"
+}

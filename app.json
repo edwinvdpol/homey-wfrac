@@ -1,0 +1,1061 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.mhi.wfrac",
+  "version": "1.0.0",
+  "compatibility": ">=7.4.0",
+  "platforms": [
+    "local"
+  ],
+  "sdk": 3,
+  "brandColor": "#E60013",
+  "name": {
+    "en": "Mitsubishi WF-RAC"
+  },
+  "description": {
+    "en": "Cooling, heating and ventilation",
+    "nl": "Koeling, verwarming en ventilatie"
+  },
+  "category": [
+    "climate"
+  ],
+  "tags": {
+    "en": [
+      "mitsubishi",
+      "heavy",
+      "industries",
+      "mhi",
+      "wifi",
+      "wi-fi",
+      "module",
+      "airco",
+      "wfrac",
+      "wf-rac",
+      "remote",
+      "climate",
+      "control"
+    ]
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "permissions": [],
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/77116"
+  },
+  "homeyCommunityTopicId": 77116,
+  "homepage": "https://www.mhi.com",
+  "support": "mailto:developer@edwinvandepol.nl",
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Fan speed changed",
+          "nl": "Ventilatorsnelheid is veranderd"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "fan_speed_changed"
+      },
+      {
+        "title": {
+          "en": "Horizontal airflow changed",
+          "nl": "Horizontale luchtstroom is veranderd"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "horizontal_position_changed"
+      },
+      {
+        "title": {
+          "en": "Operating mode changed",
+          "nl": "Werkingsmodus is veranderd"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "operating_mode_changed"
+      },
+      {
+        "title": {
+          "en": "Vertical airflow changed",
+          "nl": "Verticale luchtstroom is veranderd"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "vertical_position_changed"
+      }
+    ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Fan speed !{{is|is not}}",
+          "nl": "Ventilatorsnelheid !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Fan speed !{{is|is not}} [[speed]]",
+          "nl": "Ventilatorsnelheid !{{is|is niet}} [[speed]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Speed",
+              "nl": "Snelheid"
+            },
+            "name": "speed",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "lowest",
+                "title": {
+                  "en": "Lowest",
+                  "nl": "Laagste"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "highest",
+                "title": {
+                  "en": "Highest",
+                  "nl": "Hoogste"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "fan_speed_is"
+      },
+      {
+        "title": {
+          "en": "Horizontal airflow !{{is|is not}}",
+          "nl": "Horizontale luchtstroom !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Horizontal airflow !{{is|is not}} [[position]]",
+          "nl": "Horizontale luchtstroom !{{is|is niet}} [[position]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            },
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "ll",
+                "title": {
+                  "en": "Left - Left",
+                  "nl": "Link - Links"
+                }
+              },
+              {
+                "id": "lc",
+                "title": {
+                  "en": "Left - Center",
+                  "nl": "Links - Midden"
+                }
+              },
+              {
+                "id": "cc",
+                "title": {
+                  "en": "Center - Center",
+                  "nl": "Midden - Midden"
+                }
+              },
+              {
+                "id": "cr",
+                "title": {
+                  "en": "Center - Right",
+                  "nl": "Midden - Rechts"
+                }
+              },
+              {
+                "id": "rr",
+                "title": {
+                  "en": "Right - Right",
+                  "nl": "Rechts - Rechts"
+                }
+              },
+              {
+                "id": "lr",
+                "title": {
+                  "en": "Left - Right",
+                  "nl": "Links - Rechts"
+                }
+              },
+              {
+                "id": "rl",
+                "title": {
+                  "en": "Right - Left",
+                  "nl": "Rechts - Links"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "horizontal_position_is"
+      },
+      {
+        "title": {
+          "en": "Operating mode !{{is|is not}}",
+          "nl": "Werkingsmodus !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Operating mode !{{is|is not}} [[mode]]",
+          "nl": "Werkingsmodus !{{is|is niet}} [[mode]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Mode",
+              "nl": "Modus"
+            },
+            "name": "mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "cool",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen"
+                }
+              },
+              {
+                "id": "heat",
+                "title": {
+                  "en": "Heat",
+                  "nl": "Verwarmen"
+                }
+              },
+              {
+                "id": "fan",
+                "title": {
+                  "en": "Fan",
+                  "nl": "Ventileren"
+                }
+              },
+              {
+                "id": "dry",
+                "title": {
+                  "en": "Dry",
+                  "nl": "Drogen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "operating_mode_is"
+      },
+      {
+        "title": {
+          "en": "Vertical airflow !{{is|is not}}",
+          "nl": "Verticale luchtstroom !{{is|is niet}}"
+        },
+        "titleFormatted": {
+          "en": "Vertical airflow !{{is|is not}} [[position]]",
+          "nl": "Verticale luchtstroom !{{is|is niet}} [[position]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            },
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "highest",
+                "title": {
+                  "en": "Highest",
+                  "nl": "Hoogste"
+                }
+              },
+              {
+                "id": "middle",
+                "title": {
+                  "en": "Middle",
+                  "nl": "Midden"
+                }
+              },
+              {
+                "id": "normal",
+                "title": {
+                  "en": "Normal",
+                  "nl": "Normaal"
+                }
+              },
+              {
+                "id": "lowest",
+                "title": {
+                  "en": "Lowest",
+                  "nl": "Laagste"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "vertical_position_is"
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Set fan speed",
+          "nl": "Zet ventilatorsnelheid"
+        },
+        "titleFormatted": {
+          "en": "Set fan speed to [[speed]]",
+          "nl": "Zet ventilatorsnelheid naar [[speed]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Speed",
+              "nl": "Snelheid"
+            },
+            "name": "speed",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "lowest",
+                "title": {
+                  "en": "Lowest",
+                  "nl": "Laagste"
+                }
+              },
+              {
+                "id": "low",
+                "title": {
+                  "en": "Low",
+                  "nl": "Laag"
+                }
+              },
+              {
+                "id": "high",
+                "title": {
+                  "en": "High",
+                  "nl": "Hoog"
+                }
+              },
+              {
+                "id": "highest",
+                "title": {
+                  "en": "Highest",
+                  "nl": "Hoogste"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "fan_speed_set"
+      },
+      {
+        "title": {
+          "en": "Set horizontal airflow",
+          "nl": "Zet horizontale luchtstroom"
+        },
+        "titleFormatted": {
+          "en": "Set horizontal airflow to [[position]]",
+          "nl": "Zet horizontale luchtstroom naar [[position]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            },
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "ll",
+                "title": {
+                  "en": "Left - Left",
+                  "nl": "Link - Links"
+                }
+              },
+              {
+                "id": "lc",
+                "title": {
+                  "en": "Left - Center",
+                  "nl": "Links - Midden"
+                }
+              },
+              {
+                "id": "cc",
+                "title": {
+                  "en": "Center - Center",
+                  "nl": "Midden - Midden"
+                }
+              },
+              {
+                "id": "cr",
+                "title": {
+                  "en": "Center - Right",
+                  "nl": "Midden - Rechts"
+                }
+              },
+              {
+                "id": "rr",
+                "title": {
+                  "en": "Right - Right",
+                  "nl": "Rechts - Rechts"
+                }
+              },
+              {
+                "id": "lr",
+                "title": {
+                  "en": "Left - Right",
+                  "nl": "Links - Rechts"
+                }
+              },
+              {
+                "id": "rl",
+                "title": {
+                  "en": "Right - Left",
+                  "nl": "Rechts - Links"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "horizontal_position_set"
+      },
+      {
+        "title": {
+          "en": "Set operating mode",
+          "nl": "Zet werkingsmodus"
+        },
+        "titleFormatted": {
+          "en": "Set operating mode to [[mode]]",
+          "nl": "Zet werkingsmodus naar [[mode]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Mode",
+              "nl": "Modus"
+            },
+            "name": "mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "cool",
+                "title": {
+                  "en": "Cool",
+                  "nl": "Koelen"
+                }
+              },
+              {
+                "id": "heat",
+                "title": {
+                  "en": "Heat",
+                  "nl": "Verwarmen"
+                }
+              },
+              {
+                "id": "fan",
+                "title": {
+                  "en": "Fan",
+                  "nl": "Ventileren"
+                }
+              },
+              {
+                "id": "dry",
+                "title": {
+                  "en": "Dry",
+                  "nl": "Drogen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "operating_mode_set"
+      },
+      {
+        "title": {
+          "en": "Set vertical airflow",
+          "nl": "Zet verticale luchtstroom"
+        },
+        "titleFormatted": {
+          "en": "Set vertical airflow to [[position]]",
+          "nl": "Zet verticale luchtstroom naar [[position]]"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            },
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "auto",
+                "title": {
+                  "en": "Auto"
+                }
+              },
+              {
+                "id": "highest",
+                "title": {
+                  "en": "Highest",
+                  "nl": "Hoogste"
+                }
+              },
+              {
+                "id": "middle",
+                "title": {
+                  "en": "Middle",
+                  "nl": "Midden"
+                }
+              },
+              {
+                "id": "normal",
+                "title": {
+                  "en": "Normal",
+                  "nl": "Normaal"
+                }
+              },
+              {
+                "id": "lowest",
+                "title": {
+                  "en": "Lowest",
+                  "nl": "Laagste"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "vertical_position_set"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "images": {
+        "small": "/drivers/wfrac/assets/images/small.png",
+        "large": "/drivers/wfrac/assets/images/large.png",
+        "xlarge": "/drivers/wfrac/assets/images/xlarge.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "discovery": "beaver",
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "name": {
+        "en": "Air conditioner",
+        "nl": "Airconditioner"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "operating_mode",
+        "fan_speed",
+        "vertical_position",
+        "horizontal_position",
+        "measure_temperature.outdoor",
+        "measure_temperature",
+        "target_temperature",
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "measure_temperature": {
+          "title": {
+            "en": "Indoor temperature",
+            "nl": "Binnentemperatuur"
+          },
+          "desc": {
+            "en": "Indoor temperature in degrees Celsius (°C)",
+            "nl": "Binnentemperatuur in graden Celsius (°C)"
+          }
+        },
+        "measure_temperature.outdoor": {
+          "title": {
+            "en": "Outdoor temperature",
+            "nl": "Buitentemperatuur"
+          },
+          "desc": {
+            "en": "Outdoor temperature in degrees Celsius (°C)",
+            "nl": "Buitentemperatuur in graden Celsius (°C)"
+          }
+        },
+        "target_temperature": {
+          "min": 18,
+          "max": 30,
+          "step": 0.5
+        }
+      },
+      "id": "wfrac",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Information",
+            "nl": "Informatie"
+          },
+          "children": [
+            {
+              "id": "accounts",
+              "type": "label",
+              "label": {
+                "en": "Number of accounts",
+                "nl": "Aantal accounts"
+              },
+              "hint": {
+                "en": "Number of registered accounts on the device",
+                "nl": "Aantal geregistreerde accounts op het apparaat"
+              },
+              "value": "-"
+            },
+            {
+              "id": "wifi_firmware",
+              "type": "label",
+              "label": {
+                "en": "Wireless firmware"
+              },
+              "hint": {
+                "en": "Firmware version of the wireless unit",
+                "nl": "Firmware versie van de wireless unit"
+              },
+              "value": "-"
+            },
+            {
+              "id": "mcu_firmware",
+              "type": "label",
+              "label": {
+                "en": "MCU firmware"
+              },
+              "hint": {
+                "en": "Firmware version of the microcontroller unit",
+                "nl": "Firmware versie van de microcontroller unit"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "fan_speed": {
+      "type": "enum",
+      "title": {
+        "en": "Fan speed",
+        "nl": "Ventilatorsnelheid"
+      },
+      "desc": {
+        "en": "Current position of the fan speed",
+        "nl": "Huidige stand van de ventilatorsnelheid"
+      },
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "lowest",
+          "title": {
+            "en": "Lowest",
+            "nl": "Laagste"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "highest",
+          "title": {
+            "en": "Highest",
+            "nl": "Hoogste"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker"
+    },
+    "horizontal_position": {
+      "type": "enum",
+      "title": {
+        "en": "Horizontal airflow",
+        "nl": "Horizontale luchtstroom"
+      },
+      "desc": {
+        "en": "Current position of the horizontal airflow",
+        "nl": "Huidige stand van de horizontale luchtstroom"
+      },
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "ll",
+          "title": {
+            "en": "Left - Left",
+            "nl": "Link - Links"
+          }
+        },
+        {
+          "id": "lc",
+          "title": {
+            "en": "Left - Center",
+            "nl": "Links - Midden"
+          }
+        },
+        {
+          "id": "cc",
+          "title": {
+            "en": "Center - Center",
+            "nl": "Midden - Midden"
+          }
+        },
+        {
+          "id": "cr",
+          "title": {
+            "en": "Center - Right",
+            "nl": "Midden - Rechts"
+          }
+        },
+        {
+          "id": "rr",
+          "title": {
+            "en": "Right - Right",
+            "nl": "Rechts - Rechts"
+          }
+        },
+        {
+          "id": "lr",
+          "title": {
+            "en": "Left - Right",
+            "nl": "Links - Rechts"
+          }
+        },
+        {
+          "id": "rl",
+          "title": {
+            "en": "Right - Left",
+            "nl": "Rechts - Links"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker"
+    },
+    "operating_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Operating mode",
+        "nl": "Werkingsmodus"
+      },
+      "desc": {
+        "en": "Current operating mode",
+        "nl": "Huidige werkingsmodus"
+      },
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat",
+            "nl": "Verwarmen"
+          }
+        },
+        {
+          "id": "fan",
+          "title": {
+            "en": "Fan",
+            "nl": "Ventileren"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry",
+            "nl": "Drogen"
+          }
+        }
+      ],
+      "highlight": true,
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker"
+    },
+    "vertical_position": {
+      "type": "enum",
+      "title": {
+        "en": "Vertical airflow",
+        "nl": "Verticale luchtstroom"
+      },
+      "desc": {
+        "en": "Current position of the vertical airflow",
+        "nl": "Huidige stand van de verticale luchtstroom"
+      },
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "highest",
+          "title": {
+            "en": "Highest",
+            "nl": "Hoogste"
+          }
+        },
+        {
+          "id": "middle",
+          "title": {
+            "en": "Middle",
+            "nl": "Midden"
+          }
+        },
+        {
+          "id": "normal",
+          "title": {
+            "en": "Normal",
+            "nl": "Normaal"
+          }
+        },
+        {
+          "id": "lowest",
+          "title": {
+            "en": "Lowest",
+            "nl": "Laagste"
+          }
+        }
+      ],
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker"
+    }
+  },
+  "discovery": {
+    "beaver": {
+      "type": "mdns-sd",
+      "mdns-sd": {
+        "name": "beaver",
+        "protocol": "tcp"
+      },
+      "id": "{{name}}"
+    }
+  }
+}

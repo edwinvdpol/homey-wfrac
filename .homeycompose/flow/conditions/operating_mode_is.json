@@ -1,0 +1,64 @@
+{
+  "title": {
+    "en": "Operating mode !{{is|is not}}",
+    "nl": "Werkingsmodus !{{is|is niet}}"
+  },
+  "titleFormatted": {
+    "en": "Operating mode !{{is|is not}} [[mode]]",
+    "nl": "Werkingsmodus !{{is|is niet}} [[mode]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "title": {
+        "en": "Mode",
+        "nl": "Modus"
+      },
+      "name": "mode",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool",
+            "nl": "Koelen"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat",
+            "nl": "Verwarmen"
+          }
+        },
+        {
+          "id": "fan",
+          "title": {
+            "en": "Fan",
+            "nl": "Ventileren"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry",
+            "nl": "Drogen"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

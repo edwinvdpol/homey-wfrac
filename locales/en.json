@@ -1,0 +1,11 @@
+{
+  "status": {
+    "notRegistered": "Device cannot be operated",
+    "maxAccounts": "Operation is disabled. Device account limit reached.",
+    "wait": "Waiting for connection..."
+  },
+  "api": {
+    "connection": "Device is not reachable",
+    "notSupported": "Device is not supported"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": {
+    "en": "Set vertical airflow",
+    "nl": "Zet verticale luchtstroom"
+  },
+  "titleFormatted": {
+    "en": "Set vertical airflow to [[position]]",
+    "nl": "Zet verticale luchtstroom naar [[position]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "title": {
+        "en": "Position",
+        "nl": "Positie"
+      },
+      "name": "position",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "highest",
+          "title": {
+            "en": "Highest",
+            "nl": "Hoogste"
+          }
+        },
+        {
+          "id": "middle",
+          "title": {
+            "en": "Middle",
+            "nl": "Midden"
+          }
+        },
+        {
+          "id": "normal",
+          "title": {
+            "en": "Normal",
+            "nl": "Normaal"
+          }
+        },
+        {
+          "id": "lowest",
+          "title": {
+            "en": "Lowest",
+            "nl": "Laagste"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

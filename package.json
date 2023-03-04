@@ -1,0 +1,36 @@
+{
+  "name": "com.mhi.wfrac",
+  "version": "1.0.0",
+  "homepage": "https://github.com/edwinvdpol/com.mhi.wfrac#readme",
+  "license": "SEE LICENSE",
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://www.paypal.me/edwinvdpol"
+    }
+  ],
+  "main": "app.js",
+  "engines": {
+    "node": ">=14.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edwinvdpol/com.mhi.wfrac.git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "async-mutex": "^0.4.0",
+    "homey-log": "^2.1.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.3",
+    "eslint-config-athom": "^3.1.1"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Operating mode",
+    "nl": "Werkingsmodus"
+  },
+  "desc": {
+    "en": "Current operating mode",
+    "nl": "Huidige werkingsmodus"
+  },
+  "values": [
+    {
+      "id": "auto",
+      "title": {
+        "en": "Auto"
+      }
+    },
+    {
+      "id": "cool",
+      "title": {
+        "en": "Cool",
+        "nl": "Koelen"
+      }
+    },
+    {
+      "id": "heat",
+      "title": {
+        "en": "Heat",
+        "nl": "Verwarmen"
+      }
+    },
+    {
+      "id": "fan",
+      "title": {
+        "en": "Fan",
+        "nl": "Ventileren"
+      }
+    },
+    {
+      "id": "dry",
+      "title": {
+        "en": "Dry",
+        "nl": "Drogen"
+      }
+    }
+  ],
+  "highlight": true,
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker"
+}

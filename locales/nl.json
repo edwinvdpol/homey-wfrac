@@ -1,0 +1,11 @@
+{
+  "status": {
+    "notRegistered": "Apparaat kan niet bediend worden",
+    "maxAccounts": "Bediening is uitgeschakeld. Account limiet van apparaat bereikt.",
+    "wait": "Wachten op verbinding..."
+  },
+  "api": {
+    "connection": "Apparaat is niet bereikbaar",
+    "notSupported": "Apparaat is niet ondersteund"
+  }
+}

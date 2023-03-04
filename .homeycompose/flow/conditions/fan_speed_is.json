@@ -1,0 +1,64 @@
+{
+  "title": {
+    "en": "Fan speed !{{is|is not}}",
+    "nl": "Ventilatorsnelheid !{{is|is niet}}"
+  },
+  "titleFormatted": {
+    "en": "Fan speed !{{is|is not}} [[speed]]",
+    "nl": "Ventilatorsnelheid !{{is|is niet}} [[speed]]"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "title": {
+        "en": "Speed",
+        "nl": "Snelheid"
+      },
+      "name": "speed",
+      "type": "dropdown",
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "lowest",
+          "title": {
+            "en": "Lowest",
+            "nl": "Laagste"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low",
+            "nl": "Laag"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High",
+            "nl": "Hoog"
+          }
+        },
+        {
+          "id": "highest",
+          "title": {
+            "en": "Highest",
+            "nl": "Hoogste"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}
