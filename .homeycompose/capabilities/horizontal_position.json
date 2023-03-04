@@ -16,49 +16,49 @@
       }
     },
     {
-      "id": "ll",
+      "id": "left-left",
       "title": {
         "en": "Left - Left",
         "nl": "Link - Links"
       }
     },
     {
-      "id": "lc",
+      "id": "left-center",
       "title": {
         "en": "Left - Center",
         "nl": "Links - Midden"
       }
     },
     {
-      "id": "cc",
+      "id": "center-center",
       "title": {
         "en": "Center - Center",
         "nl": "Midden - Midden"
       }
     },
     {
-      "id": "cr",
+      "id": "center-right",
       "title": {
         "en": "Center - Right",
         "nl": "Midden - Rechts"
       }
     },
     {
-      "id": "rr",
+      "id": "right-right",
       "title": {
         "en": "Right - Right",
         "nl": "Rechts - Rechts"
       }
     },
     {
-      "id": "lr",
+      "id": "left-right",
       "title": {
         "en": "Left - Right",
         "nl": "Links - Rechts"
       }
     },
     {
-      "id": "rl",
+      "id": "right-left",
       "title": {
         "en": "Right - Left",
         "nl": "Rechts - Links"
