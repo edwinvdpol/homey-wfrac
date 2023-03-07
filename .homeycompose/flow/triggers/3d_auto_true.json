@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "3D AUTO turned on",
+    "nl": "3D AUTO aangezet"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

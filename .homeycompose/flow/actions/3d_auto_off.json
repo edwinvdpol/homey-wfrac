@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Turn off 3D AUTO",
+    "nl": "Zet 3D AUTO uit"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

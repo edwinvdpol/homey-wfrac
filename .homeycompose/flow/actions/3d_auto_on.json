@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Turn on 3D AUTO",
+    "nl": "Zet 3D AUTO aan"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac"
+    }
+  ]
+}

@@ -12,7 +12,8 @@
     "measure_temperature.outdoor",
     "measure_temperature",
     "target_temperature",
-    "onoff"
+    "onoff",
+    "3d_auto"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {

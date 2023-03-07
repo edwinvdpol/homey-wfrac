@@ -1,0 +1,19 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "3D AUTO"
+  },
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "3D AUTO turned on",
+    "nl": "3D AUTO aangezet"
+  },
+  "insightsTitleFalse": {
+    "en": "3D AUTO turned off",
+    "nl": "3D AUTO uitgezet"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "toggle",
+  "uiQuickAction": false
+}

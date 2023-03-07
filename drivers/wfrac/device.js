@@ -86,6 +86,11 @@ class WFRACDevice extends Device {
 
     let stat = this.airconStat;
 
+    // 3D AUTO
+    if (filled(stat.entrust)) {
+      this.setCapabilityValue('3d_auto', stat.entrust).catch(this.error);
+    }
+
     // Fan speed
     if (filled(stat.airFlow)) {
       this.setCapabilityValue('fan_speed', AirFlow[stat.airFlow]).catch(this.error);
@@ -182,6 +187,13 @@ class WFRACDevice extends Device {
       windDirectionLR: HorizontalPositionNames[value],
       entrust: false,
     });
+  }
+
+  // 3D AUTO capability changed
+  async onCapability3dAuto(value) {
+    this.log(`3D AUTO changed to '${value}'`);
+
+    await this.updateDevice({ entrust: value });
   }
 
   // On/off capability changed

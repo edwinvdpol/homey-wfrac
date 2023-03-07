@@ -70,6 +70,40 @@
     "triggers": [
       {
         "title": {
+          "en": "3D AUTO turned off",
+          "nl": "3D AUTO uitgezet"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "3d_auto_false"
+      },
+      {
+        "title": {
+          "en": "3D AUTO turned on",
+          "nl": "3D AUTO aangezet"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "3d_auto_true"
+      },
+      {
+        "title": {
           "en": "Fan speed changed",
           "nl": "Ventilatorsnelheid is veranderd"
         },
@@ -138,6 +172,23 @@
       }
     ],
     "conditions": [
+      {
+        "title": {
+          "en": "3D AUTO is turned !{{on|off}}",
+          "nl": "3D AUTO is !{{aan|uit}}"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "3d_auto_is"
+      },
       {
         "title": {
           "en": "Fan speed !{{is|is not}}",
@@ -421,6 +472,40 @@
       }
     ],
     "actions": [
+      {
+        "title": {
+          "en": "Turn off 3D AUTO",
+          "nl": "Zet 3D AUTO uit"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "3d_auto_off"
+      },
+      {
+        "title": {
+          "en": "Turn on 3D AUTO",
+          "nl": "Zet 3D AUTO aan"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac"
+          }
+        ],
+        "id": "3d_auto_on"
+      },
       {
         "title": {
           "en": "Set fan speed",
@@ -744,7 +829,8 @@
         "measure_temperature.outdoor",
         "measure_temperature",
         "target_temperature",
-        "onoff"
+        "onoff",
+        "3d_auto"
       ],
       "capabilitiesOptions": {
         "measure_temperature": {
@@ -868,6 +954,25 @@
     }
   ],
   "capabilities": {
+    "3d_auto": {
+      "type": "boolean",
+      "title": {
+        "en": "3D AUTO"
+      },
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "3D AUTO turned on",
+        "nl": "3D AUTO aangezet"
+      },
+      "insightsTitleFalse": {
+        "en": "3D AUTO turned off",
+        "nl": "3D AUTO uitgezet"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": false
+    },
     "fan_speed": {
       "type": "enum",
       "title": {
