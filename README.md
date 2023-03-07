@@ -1,4 +1,4 @@
-# Mitsubishi WF-RAC for Homey
+# Mitsubishi (WF-RAC) for Homey
 
 Now control your Mitsubishi Heavy Industries air conditioner from anywhere with Homey.
 
