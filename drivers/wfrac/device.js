@@ -47,7 +47,7 @@ class WFRACDevice extends Device {
     // Set warning message
     this.setWarning(this.homey.__(warning)).catch(this.error);
 
-    return this.log('Warning!', this.homey.__(warning));
+    return this.error(warning);
   }
 
   // Set AirconStat
@@ -69,8 +69,9 @@ class WFRACDevice extends Device {
     this.contents = data;
     this.log('New contents:', JSON.stringify(this.contents));
 
-    // Set number of accounts
+    // Set number of accounts and firmware type
     this.accounts = Number(data.numOfAccount) || null;
+    this.firmware = data.firmType || null;
 
     data = null;
   }
@@ -143,13 +144,18 @@ class WFRACDevice extends Device {
       return;
     }
 
-    this.error('Syncing settings');
+    this.log('Syncing settings');
 
     const settings = {};
 
     // Number of accounts
     if (this.accounts) {
       settings.accounts = String(this.accounts);
+    }
+
+    // Firmware type
+    if (filled(this.firmware)) {
+      settings.firmware_type = this.firmware;
     }
 
     // Wireless firmware
@@ -166,6 +172,14 @@ class WFRACDevice extends Device {
     if (filled(settings)) {
       this.setSettings(settings).catch(this.error);
     }
+
+    // Firmware has warning
+    if (this.setFirmwareWarning()) {
+      return;
+    }
+
+    // Remove warning
+    this.unsetWarning().catch(this.error);
   }
 
   /*
@@ -278,6 +292,10 @@ class WFRACDevice extends Device {
     return this.setRegistered(true);
   }
 
+  /*
+  | Warning functions
+  */
+
   // Return warning message for account
   getAccountWarning() {
     if (this.registered) return null;
@@ -290,6 +308,19 @@ class WFRACDevice extends Device {
 
     // Account not registered yet
     return 'status.notRegistered';
+  }
+
+  // Set firmware version not supported warning
+  setFirmwareWarning() {
+    if (!this.firmware) return false;
+    if (this.firmware === 'WF-RAC') return false;
+
+    const warning = this.homey.__('status.wrongFirmware', { firmware: this.firmware });
+
+    this.error(`Firmware '${this.firmware}' is not supported`);
+    this.setWarning(warning).catch(this.error);
+
+    return true;
   }
 
 }

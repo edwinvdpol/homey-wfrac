@@ -7,7 +7,7 @@
     "local"
   ],
   "sdk": 3,
-  "brandColor": "#E60013",
+  "brandColor": "#E60012",
   "name": {
     "en": "Mitsubishi (WF-RAC)"
   },
@@ -921,14 +921,26 @@
         {
           "type": "group",
           "label": {
-            "en": "Software"
+            "en": "Firmware"
           },
           "children": [
+            {
+              "id": "firmware_type",
+              "type": "label",
+              "label": {
+                "en": "Type"
+              },
+              "hint": {
+                "en": "Firmware type of the module",
+                "nl": "Firmware type van de module"
+              },
+              "value": "-"
+            },
             {
               "id": "wifi_firmware",
               "type": "label",
               "label": {
-                "en": "Wireless firmware"
+                "en": "Wireless unit"
               },
               "hint": {
                 "en": "Firmware version of the wireless unit",
@@ -940,7 +952,7 @@
               "id": "mcu_firmware",
               "type": "label",
               "label": {
-                "en": "MCU firmware"
+                "en": "Microcontroller"
               },
               "hint": {
                 "en": "Firmware version of the microcontroller unit",

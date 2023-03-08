@@ -1,11 +1,12 @@
 {
   "status": {
-    "notRegistered": "Device cannot be operated",
+    "notRegistered": "Device cannot be operated.",
     "maxAccounts": "Operation is disabled. Device account limit reached.",
-    "wait": "Waiting for connection..."
+    "wait": "Waiting for connection...",
+    "wrongFirmware": "Device with firmware __firmware__ is not supported."
   },
   "api": {
-    "connection": "Device is not reachable",
-    "notSupported": "Device is not supported"
+    "connection": "Device is not reachable.",
+    "notSupported": "Device is not supported."
   }
 }

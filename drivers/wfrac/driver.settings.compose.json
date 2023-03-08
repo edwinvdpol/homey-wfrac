@@ -29,9 +29,12 @@
   {
     "type": "group",
     "label": {
-      "en": "Software"
+      "en": "Firmware"
     },
     "children": [
+      {
+        "$extends": "firmware_type"
+      },
       {
         "$extends": "wifi_firmware"
       },
