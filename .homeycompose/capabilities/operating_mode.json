@@ -4,10 +4,6 @@
     "en": "Operating mode",
     "nl": "Werkingsmodus"
   },
-  "desc": {
-    "en": "Current operating mode",
-    "nl": "Huidige werkingsmodus"
-  },
   "values": [
     {
       "id": "auto",

@@ -5,8 +5,8 @@
     "nl": "Ventilatorsnelheid"
   },
   "desc": {
-    "en": "Current position of the fan speed",
-    "nl": "Huidige stand van de ventilatorsnelheid"
+    "en": "Position of the fan speed",
+    "nl": "Stand van de ventilatorsnelheid"
   },
   "values": [
     {

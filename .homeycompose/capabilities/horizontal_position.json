@@ -5,8 +5,8 @@
     "nl": "Horizontale luchtstroom"
   },
   "desc": {
-    "en": "Current position of the horizontal airflow",
-    "nl": "Huidige stand van de horizontale luchtstroom"
+    "en": "Position of the horizontal airflow",
+    "nl": "Stand van de horizontale luchtstroom"
   },
   "values": [
     {

@@ -992,8 +992,8 @@
         "nl": "Ventilatorsnelheid"
       },
       "desc": {
-        "en": "Current position of the fan speed",
-        "nl": "Huidige stand van de ventilatorsnelheid"
+        "en": "Position of the fan speed",
+        "nl": "Stand van de ventilatorsnelheid"
       },
       "values": [
         {
@@ -1042,8 +1042,8 @@
         "nl": "Horizontale luchtstroom"
       },
       "desc": {
-        "en": "Current position of the horizontal airflow",
-        "nl": "Huidige stand van de horizontale luchtstroom"
+        "en": "Position of the horizontal airflow",
+        "nl": "Stand van de horizontale luchtstroom"
       },
       "values": [
         {
@@ -1112,10 +1112,6 @@
         "en": "Operating mode",
         "nl": "Werkingsmodus"
       },
-      "desc": {
-        "en": "Current operating mode",
-        "nl": "Huidige werkingsmodus"
-      },
       "values": [
         {
           "id": "auto",
@@ -1164,8 +1160,8 @@
         "nl": "Verticale luchtstroom"
       },
       "desc": {
-        "en": "Current position of the vertical airflow",
-        "nl": "Huidige stand van de verticale luchtstroom"
+        "en": "Position of the vertical airflow",
+        "nl": "Stand van de verticale luchtstroom"
       },
       "values": [
         {
