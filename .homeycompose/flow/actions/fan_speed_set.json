@@ -13,8 +13,8 @@
   "args": [
     {
       "title": {
-        "en": "Speed",
-        "nl": "Snelheid"
+        "en": "speed",
+        "nl": "snelheid"
       },
       "name": "speed",
       "type": "dropdown",

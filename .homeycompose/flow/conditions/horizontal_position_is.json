@@ -13,8 +13,8 @@
   "args": [
     {
       "title": {
-        "en": "Position",
-        "nl": "Positie"
+        "en": "position",
+        "nl": "positie"
       },
       "name": "position",
       "type": "dropdown",

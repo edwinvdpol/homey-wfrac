@@ -204,8 +204,8 @@
         "args": [
           {
             "title": {
-              "en": "Speed",
-              "nl": "Snelheid"
+              "en": "speed",
+              "nl": "snelheid"
             },
             "name": "speed",
             "type": "dropdown",
@@ -269,8 +269,8 @@
         "args": [
           {
             "title": {
-              "en": "Position",
-              "nl": "Positie"
+              "en": "position",
+              "nl": "positie"
             },
             "name": "position",
             "type": "dropdown",
@@ -355,8 +355,8 @@
         "args": [
           {
             "title": {
-              "en": "Mode",
-              "nl": "Modus"
+              "en": "mode",
+              "nl": "modus"
             },
             "name": "mode",
             "type": "dropdown",
@@ -420,8 +420,8 @@
         "args": [
           {
             "title": {
-              "en": "Position",
-              "nl": "Positie"
+              "en": "position",
+              "nl": "positie"
             },
             "name": "position",
             "type": "dropdown",
@@ -521,8 +521,8 @@
         "args": [
           {
             "title": {
-              "en": "Speed",
-              "nl": "Snelheid"
+              "en": "speed",
+              "nl": "snelheid"
             },
             "name": "speed",
             "type": "dropdown",
@@ -586,8 +586,8 @@
         "args": [
           {
             "title": {
-              "en": "Position",
-              "nl": "Positie"
+              "en": "position",
+              "nl": "positie"
             },
             "name": "position",
             "type": "dropdown",
@@ -672,8 +672,8 @@
         "args": [
           {
             "title": {
-              "en": "Mode",
-              "nl": "Modus"
+              "en": "mode",
+              "nl": "modus"
             },
             "name": "mode",
             "type": "dropdown",
@@ -737,8 +737,8 @@
         "args": [
           {
             "title": {
-              "en": "Position",
-              "nl": "Positie"
+              "en": "position",
+              "nl": "positie"
             },
             "name": "position",
             "type": "dropdown",
