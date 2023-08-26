@@ -1,7 +1,7 @@
 'use strict';
 
 const Device = require('../../lib/Device');
-const { filled } = require('../../lib/Utils');
+const { filled, blank } = require('../../lib/Utils');
 const {
   AirFlow, AirFlowNames,
   HorizontalPosition, HorizontalPositionNames,
@@ -54,6 +54,8 @@ class WFRACDevice extends Device {
   async syncAirconStat(data = null) {
     if (!data) {
       data = await this.client.getAirconStat();
+
+      if (blank(data)) return;
     }
 
     // Set available
@@ -61,13 +63,13 @@ class WFRACDevice extends Device {
 
     // Set decoded AirconStat
     this.airconStat = data.airconStat;
-    this.log('New airconStat:', JSON.stringify(this.airconStat));
+    this.log('airconStat:', JSON.stringify(this.airconStat));
 
     delete data.airconStat;
 
     // Set contents
     this.contents = data;
-    this.log('New contents:', JSON.stringify(this.contents));
+    this.log('Contents:', JSON.stringify(this.contents));
 
     // Set number of accounts and firmware type
     this.accounts = Number(data.numOfAccount) || null;
@@ -143,8 +145,6 @@ class WFRACDevice extends Device {
 
       return;
     }
-
-    this.log('Syncing settings');
 
     const settings = {};
 
@@ -247,14 +247,15 @@ class WFRACDevice extends Device {
 
   // Delete account
   async deleteAccount(uninit = false) {
-    if (!this.registered) return null;
+    if (!this.registered) return;
+
+    this.log('Deleting account');
 
     // Device not available
     if (!this.getAvailable()) {
-      return this.error('Delete account: Device not available');
+      this.error('Device not available, trying anyway...');
     }
 
-    this.log('Deleting account');
     this.log('-- Operator ID:', this.operatorId);
 
     // Delete account from device
@@ -269,8 +270,6 @@ class WFRACDevice extends Device {
     if (!uninit) {
       this.setRegistered(false);
     }
-
-    return null;
   }
 
   // Register account
