@@ -65,7 +65,7 @@
   },
   "homeyCommunityTopicId": 77116,
   "homepage": "https://www.mhi.com",
-  "support": "mailto:developer@edwinvandepol.nl",
+  "support": "https://community.homey.app/t/77116",
   "flow": {
     "triggers": [
       {
