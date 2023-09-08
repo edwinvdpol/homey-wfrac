@@ -10,7 +10,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=3d_auto"
     }
   ]
 }

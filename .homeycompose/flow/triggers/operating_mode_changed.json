@@ -3,6 +3,10 @@
     "en": "Operating mode changed",
     "nl": "Werkingsmodus is veranderd"
   },
+  "hint": {
+    "en": "This flowcard triggers when the operating mode was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de werkingsmodus veranderd werd."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=operating_mode"
     }
   ]
 }

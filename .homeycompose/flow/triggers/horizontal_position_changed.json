@@ -3,6 +3,10 @@
     "en": "Horizontal airflow changed",
     "nl": "Horizontale luchtstroom is veranderd"
   },
+  "hint": {
+    "en": "This flowcard triggers when the horizontal airflow was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de horizontale luchtstroom veranderd werd."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=horizontal_position"
     }
   ]
 }

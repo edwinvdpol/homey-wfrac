@@ -7,17 +7,21 @@
     "en": "Set vertical airflow to [[position]]",
     "nl": "Zet verticale luchtstroom naar [[position]]"
   },
+  "hint": {
+    "en": "Use this flowcard to change the vertical airflow.",
+    "nl": "Gebruik deze kaart om de verticale luchtstroom te veranderen."
+  },
   "platforms": [
     "local"
   ],
   "args": [
     {
+      "type": "dropdown",
+      "name": "position",
       "title": {
         "en": "position",
         "nl": "positie"
       },
-      "name": "position",
-      "type": "dropdown",
       "values": [
         {
           "id": "auto",
@@ -58,7 +62,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=vertical_position"
     }
   ]
 }

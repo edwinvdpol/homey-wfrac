@@ -3,6 +3,10 @@
     "en": "Turn on 3D AUTO",
     "nl": "Zet 3D AUTO aan"
   },
+  "hint": {
+    "en": "Use this flowcard to turn on 3D AUTO.",
+    "nl": "Gebruik deze kaart om 3D AUTO aan te zetten."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=3d_auto"
     }
   ]
 }

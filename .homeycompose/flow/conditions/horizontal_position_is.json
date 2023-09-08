@@ -12,12 +12,12 @@
   ],
   "args": [
     {
+      "type": "dropdown",
+      "name": "position",
       "title": {
         "en": "position",
         "nl": "positie"
       },
-      "name": "position",
-      "type": "dropdown",
       "values": [
         {
           "id": "auto",
@@ -79,7 +79,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=horizontal_position"
     }
   ]
 }

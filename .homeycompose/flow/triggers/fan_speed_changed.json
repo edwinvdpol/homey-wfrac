@@ -3,6 +3,10 @@
     "en": "Fan speed changed",
     "nl": "Ventilatorsnelheid is veranderd"
   },
+  "hint": {
+    "en": "This flowcard triggers when the fan speed was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de ventilatorsnelheid veranderd werd."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=fan_speed"
     }
   ]
 }

@@ -3,6 +3,10 @@
     "en": "3D AUTO turned off",
     "nl": "3D AUTO uitgezet"
   },
+  "hint": {
+    "en": "This flowcard triggers when 3D AUTO was turned off.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer 3D AUTO uitgezet werd."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=3d_auto"
     }
   ]
 }

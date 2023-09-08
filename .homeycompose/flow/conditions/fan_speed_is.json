@@ -12,12 +12,12 @@
   ],
   "args": [
     {
+      "type": "dropdown",
+      "name": "speed",
       "title": {
         "en": "speed",
         "nl": "snelheid"
       },
-      "name": "speed",
-      "type": "dropdown",
       "values": [
         {
           "id": "auto",
@@ -58,7 +58,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=fan_speed"
     }
   ]
 }

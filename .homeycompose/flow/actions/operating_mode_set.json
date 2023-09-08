@@ -7,17 +7,21 @@
     "en": "Set operating mode to [[mode]]",
     "nl": "Zet werkingsmodus naar [[mode]]"
   },
+  "hint": {
+    "en": "Use this flowcard to change the operating mode.",
+    "nl": "Gebruik deze kaart om de werkingsmodus te veranderen."
+  },
   "platforms": [
     "local"
   ],
   "args": [
     {
+      "type": "dropdown",
+      "name": "mode",
       "title": {
         "en": "mode",
         "nl": "modus"
       },
-      "name": "mode",
-      "type": "dropdown",
       "values": [
         {
           "id": "auto",
@@ -58,7 +62,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=operating_mode"
     }
   ]
 }

@@ -12,12 +12,12 @@
   ],
   "args": [
     {
+      "type": "dropdown",
+      "name": "mode",
       "title": {
         "en": "mode",
         "nl": "modus"
       },
-      "name": "mode",
-      "type": "dropdown",
       "values": [
         {
           "id": "auto",
@@ -58,7 +58,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=operating_mode"
     }
   ]
 }

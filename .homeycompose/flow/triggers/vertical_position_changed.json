@@ -3,6 +3,10 @@
     "en": "Vertical airflow changed",
     "nl": "Verticale luchtstroom is veranderd"
   },
+  "hint": {
+    "en": "This flowcard triggers when the vertical airflow was changed.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de verticale luchtstroom veranderd werd."
+  },
   "platforms": [
     "local"
   ],
@@ -10,7 +14,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=wfrac"
+      "filter": "driver_id=wfrac&capabilities=vertical_position"
     }
   ]
 }

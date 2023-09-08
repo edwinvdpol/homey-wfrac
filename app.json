@@ -73,6 +73,10 @@
           "en": "3D AUTO turned off",
           "nl": "3D AUTO uitgezet"
         },
+        "hint": {
+          "en": "This flowcard triggers when 3D AUTO was turned off.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer 3D AUTO uitgezet werd."
+        },
         "platforms": [
           "local"
         ],
@@ -80,7 +84,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=3d_auto"
           }
         ],
         "id": "3d_auto_false"
@@ -90,6 +94,10 @@
           "en": "3D AUTO turned on",
           "nl": "3D AUTO aangezet"
         },
+        "hint": {
+          "en": "This flowcard triggers when 3D AUTO was turned on.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer 3D AUTO aangezet werd."
+        },
         "platforms": [
           "local"
         ],
@@ -97,7 +105,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=3d_auto"
           }
         ],
         "id": "3d_auto_true"
@@ -107,6 +115,10 @@
           "en": "Fan speed changed",
           "nl": "Ventilatorsnelheid is veranderd"
         },
+        "hint": {
+          "en": "This flowcard triggers when the fan speed was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de ventilatorsnelheid veranderd werd."
+        },
         "platforms": [
           "local"
         ],
@@ -114,7 +126,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=fan_speed"
           }
         ],
         "id": "fan_speed_changed"
@@ -124,6 +136,10 @@
           "en": "Horizontal airflow changed",
           "nl": "Horizontale luchtstroom is veranderd"
         },
+        "hint": {
+          "en": "This flowcard triggers when the horizontal airflow was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de horizontale luchtstroom veranderd werd."
+        },
         "platforms": [
           "local"
         ],
@@ -131,7 +147,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=horizontal_position"
           }
         ],
         "id": "horizontal_position_changed"
@@ -141,6 +157,10 @@
           "en": "Operating mode changed",
           "nl": "Werkingsmodus is veranderd"
         },
+        "hint": {
+          "en": "This flowcard triggers when the operating mode was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de werkingsmodus veranderd werd."
+        },
         "platforms": [
           "local"
         ],
@@ -148,7 +168,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=operating_mode"
           }
         ],
         "id": "operating_mode_changed"
@@ -158,6 +178,10 @@
           "en": "Vertical airflow changed",
           "nl": "Verticale luchtstroom is veranderd"
         },
+        "hint": {
+          "en": "This flowcard triggers when the vertical airflow was changed.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de verticale luchtstroom veranderd werd."
+        },
         "platforms": [
           "local"
         ],
@@ -165,7 +189,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=vertical_position"
           }
         ],
         "id": "vertical_position_changed"
@@ -184,7 +208,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=3d_auto"
           }
         ],
         "id": "3d_auto_is"
@@ -203,12 +227,12 @@
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "speed",
             "title": {
               "en": "speed",
               "nl": "snelheid"
             },
-            "name": "speed",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -249,7 +273,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=fan_speed"
           }
         ],
         "id": "fan_speed_is"
@@ -268,12 +292,12 @@
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "position",
             "title": {
               "en": "position",
               "nl": "positie"
             },
-            "name": "position",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -335,7 +359,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=horizontal_position"
           }
         ],
         "id": "horizontal_position_is"
@@ -354,12 +378,12 @@
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "mode",
             "title": {
               "en": "mode",
               "nl": "modus"
             },
-            "name": "mode",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -400,7 +424,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=operating_mode"
           }
         ],
         "id": "operating_mode_is"
@@ -419,12 +443,12 @@
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "position",
             "title": {
               "en": "position",
               "nl": "positie"
             },
-            "name": "position",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -465,7 +489,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=vertical_position"
           }
         ],
         "id": "vertical_position_is"
@@ -477,6 +501,10 @@
           "en": "Turn off 3D AUTO",
           "nl": "Zet 3D AUTO uit"
         },
+        "hint": {
+          "en": "Use this flowcard to turn off 3D AUTO.",
+          "nl": "Gebruik deze kaart om 3D AUTO uit te zetten."
+        },
         "platforms": [
           "local"
         ],
@@ -484,7 +512,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=3d_auto"
           }
         ],
         "id": "3d_auto_off"
@@ -494,6 +522,10 @@
           "en": "Turn on 3D AUTO",
           "nl": "Zet 3D AUTO aan"
         },
+        "hint": {
+          "en": "Use this flowcard to turn on 3D AUTO.",
+          "nl": "Gebruik deze kaart om 3D AUTO aan te zetten."
+        },
         "platforms": [
           "local"
         ],
@@ -501,7 +533,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=3d_auto"
           }
         ],
         "id": "3d_auto_on"
@@ -515,17 +547,21 @@
           "en": "Set fan speed to [[speed]]",
           "nl": "Zet ventilatorsnelheid naar [[speed]]"
         },
+        "hint": {
+          "en": "Use this flowcard to change the fan speed.",
+          "nl": "Gebruik deze kaart om de ventilatorsnelheid te veranderen."
+        },
         "platforms": [
           "local"
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "speed",
             "title": {
               "en": "speed",
               "nl": "snelheid"
             },
-            "name": "speed",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -566,7 +602,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=fan_speed"
           }
         ],
         "id": "fan_speed_set"
@@ -580,17 +616,21 @@
           "en": "Set horizontal airflow to [[position]]",
           "nl": "Zet horizontale luchtstroom naar [[position]]"
         },
+        "hint": {
+          "en": "Use this flowcard to change the horizontal airflow.",
+          "nl": "Gebruik deze kaart om de horizontale luchtstroom te veranderen."
+        },
         "platforms": [
           "local"
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "position",
             "title": {
               "en": "position",
               "nl": "positie"
             },
-            "name": "position",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -652,7 +692,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=horizontal_position"
           }
         ],
         "id": "horizontal_position_set"
@@ -666,17 +706,21 @@
           "en": "Set operating mode to [[mode]]",
           "nl": "Zet werkingsmodus naar [[mode]]"
         },
+        "hint": {
+          "en": "Use this flowcard to change the operating mode.",
+          "nl": "Gebruik deze kaart om de werkingsmodus te veranderen."
+        },
         "platforms": [
           "local"
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "mode",
             "title": {
               "en": "mode",
               "nl": "modus"
             },
-            "name": "mode",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -717,7 +761,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=operating_mode"
           }
         ],
         "id": "operating_mode_set"
@@ -731,17 +775,21 @@
           "en": "Set vertical airflow to [[position]]",
           "nl": "Zet verticale luchtstroom naar [[position]]"
         },
+        "hint": {
+          "en": "Use this flowcard to change the vertical airflow.",
+          "nl": "Gebruik deze kaart om de verticale luchtstroom te veranderen."
+        },
         "platforms": [
           "local"
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "position",
             "title": {
               "en": "position",
               "nl": "positie"
             },
-            "name": "position",
-            "type": "dropdown",
             "values": [
               {
                 "id": "auto",
@@ -782,7 +830,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=wfrac"
+            "filter": "driver_id=wfrac&capabilities=vertical_position"
           }
         ],
         "id": "vertical_position_set"
