@@ -90,47 +90,47 @@ class WFRACDevice extends Device {
     let stat = this.airconStat;
 
     // 3D AUTO
-    if (filled(stat.entrust)) {
+    if ('entrust' in stat) {
       this.setCapabilityValue('3d_auto', stat.entrust).catch(this.error);
     }
 
     // Fan speed
-    if (filled(stat.airFlow)) {
+    if ('airFlow' in stat) {
       this.setCapabilityValue('fan_speed', AirFlow[stat.airFlow]).catch(this.error);
     }
 
     // Horizontal position
-    if (filled(stat.windDirectionLR)) {
+    if ('windDirectionLR' in stat) {
       this.setCapabilityValue('horizontal_position', HorizontalPosition[stat.windDirectionLR]).catch(this.error);
     }
 
     // Indoor temperature
-    if (filled(stat.indoorTemp)) {
+    if ('indoorTemp' in stat) {
       this.setCapabilityValue('measure_temperature', stat.indoorTemp).catch(this.error);
     }
 
     // Operation
-    if (filled(stat.operation)) {
+    if ('operation' in stat) {
       this.setCapabilityValue('onoff', stat.operation).catch(this.error);
     }
 
     // Operating mode
-    if (filled(stat.operationMode)) {
+    if ('operationMode' in stat) {
       this.setCapabilityValue('operating_mode', OperationMode[stat.operationMode]).catch(this.error);
     }
 
     // Outdoor temperature
-    if (filled(stat.outdoorTemp)) {
+    if ('outdoorTemp' in stat) {
       this.setCapabilityValue('measure_temperature.outdoor', stat.outdoorTemp).catch(this.error);
     }
 
     // Preset temperature
-    if (filled(stat.presetTemp)) {
+    if ('presetTemp' in stat) {
       this.setCapabilityValue('target_temperature', stat.presetTemp).catch(this.error);
     }
 
     // Vertical position
-    if (filled(stat.windDirectionUD)) {
+    if ('windDirectionUD' in stat) {
       this.setCapabilityValue('vertical_position', VerticalPosition[stat.windDirectionUD]).catch(this.error);
     }
 
