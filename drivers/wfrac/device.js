@@ -247,15 +247,9 @@ class WFRACDevice extends Device {
 
   // Delete account
   async deleteAccount(uninit = false) {
-    if (!this.registered) return;
+    if (!this.registered || !this.client) return;
 
     this.log('Deleting account');
-
-    // Device not available
-    if (!this.getAvailable()) {
-      this.error('Device not available, trying anyway...');
-    }
-
     this.log('-- Operator ID:', this.operatorId);
 
     // Delete account from device
