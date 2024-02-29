@@ -249,7 +249,7 @@ class WFRACDevice extends Device {
   async deleteAccount(uninit = false) {
     if (!this.registered || !this.client) return;
 
-    this.log('Deleting account');
+    this.log('[Account] Deleting');
     this.log('-- Operator ID:', this.operatorId);
 
     // Delete account from device
@@ -258,7 +258,7 @@ class WFRACDevice extends Device {
       await this.client.deleteAccountInfo();
     }
 
-    this.log('Account deleted');
+    this.log('[Account] Deleted');
 
     // Mark as unregistered
     if (!uninit) {
