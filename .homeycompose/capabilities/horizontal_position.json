@@ -8,6 +8,9 @@
     "en": "Position of the horizontal airflow",
     "nl": "Stand van de horizontale luchtstroom"
   },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
   "values": [
     {
       "id": "auto",
@@ -64,8 +67,5 @@
         "nl": "Rechts - Links"
       }
     }
-  ],
-  "getable": true,
-  "setable": true,
-  "uiComponent": "picker"
+  ]
 }

@@ -4,6 +4,10 @@
     "en": "Operating mode",
     "nl": "Werkingsmodus"
   },
+  "getable": true,
+  "setable": true,
+  "highlight": true,
+  "uiComponent": "picker",
   "values": [
     {
       "id": "auto",
@@ -39,9 +43,5 @@
         "nl": "Drogen"
       }
     }
-  ],
-  "highlight": true,
-  "getable": true,
-  "setable": true,
-  "uiComponent": "picker"
+  ]
 }

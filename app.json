@@ -1019,6 +1019,8 @@
       "title": {
         "en": "3D AUTO"
       },
+      "getable": true,
+      "setable": true,
       "insights": true,
       "insightsTitleTrue": {
         "en": "3D AUTO turned on",
@@ -1028,10 +1030,8 @@
         "en": "3D AUTO turned off",
         "nl": "3D AUTO uitgezet"
       },
-      "getable": true,
-      "setable": true,
-      "uiComponent": "toggle",
-      "uiQuickAction": false
+      "uiQuickAction": false,
+      "uiComponent": "toggle"
     },
     "fan_speed": {
       "type": "enum",
@@ -1043,6 +1043,9 @@
         "en": "Position of the fan speed",
         "nl": "Stand van de ventilatorsnelheid"
       },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "auto",
@@ -1078,10 +1081,7 @@
             "nl": "Hoogste"
           }
         }
-      ],
-      "getable": true,
-      "setable": true,
-      "uiComponent": "picker"
+      ]
     },
     "horizontal_position": {
       "type": "enum",
@@ -1093,6 +1093,9 @@
         "en": "Position of the horizontal airflow",
         "nl": "Stand van de horizontale luchtstroom"
       },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "auto",
@@ -1149,10 +1152,7 @@
             "nl": "Rechts - Links"
           }
         }
-      ],
-      "getable": true,
-      "setable": true,
-      "uiComponent": "picker"
+      ]
     },
     "operating_mode": {
       "type": "enum",
@@ -1160,6 +1160,10 @@
         "en": "Operating mode",
         "nl": "Werkingsmodus"
       },
+      "getable": true,
+      "setable": true,
+      "highlight": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "auto",
@@ -1195,11 +1199,7 @@
             "nl": "Drogen"
           }
         }
-      ],
-      "highlight": true,
-      "getable": true,
-      "setable": true,
-      "uiComponent": "picker"
+      ]
     },
     "vertical_position": {
       "type": "enum",
@@ -1211,6 +1211,9 @@
         "en": "Position of the vertical airflow",
         "nl": "Stand van de verticale luchtstroom"
       },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "auto",
@@ -1246,10 +1249,7 @@
             "nl": "Laagste"
           }
         }
-      ],
-      "getable": true,
-      "setable": true,
-      "uiComponent": "picker"
+      ]
     }
   },
   "discovery": {

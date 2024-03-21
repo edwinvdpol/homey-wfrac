@@ -8,6 +8,9 @@
     "en": "Position of the fan speed",
     "nl": "Stand van de ventilatorsnelheid"
   },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
   "values": [
     {
       "id": "auto",
@@ -43,8 +46,5 @@
         "nl": "Hoogste"
       }
     }
-  ],
-  "getable": true,
-  "setable": true,
-  "uiComponent": "picker"
+  ]
 }

@@ -3,6 +3,8 @@
   "title": {
     "en": "3D AUTO"
   },
+  "getable": true,
+  "setable": true,
   "insights": true,
   "insightsTitleTrue": {
     "en": "3D AUTO turned on",
@@ -12,8 +14,6 @@
     "en": "3D AUTO turned off",
     "nl": "3D AUTO uitgezet"
   },
-  "getable": true,
-  "setable": true,
-  "uiComponent": "toggle",
-  "uiQuickAction": false
+  "uiQuickAction": false,
+  "uiComponent": "toggle"
 }
