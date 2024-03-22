@@ -90,47 +90,47 @@ class WFRACDevice extends Device {
     let stat = this.airconStat;
 
     // 3D AUTO
-    if ('entrust' in stat) {
+    if ('entrust' in stat && this.hasCapability('3d_auto')) {
       this.setCapabilityValue('3d_auto', stat.entrust).catch(this.error);
     }
 
     // Fan speed
-    if ('airFlow' in stat) {
+    if ('airFlow' in stat && this.hasCapability('fan_speed')) {
       this.setCapabilityValue('fan_speed', AirFlow[stat.airFlow]).catch(this.error);
     }
 
     // Horizontal position
-    if ('windDirectionLR' in stat) {
+    if ('windDirectionLR' in stat && this.hasCapability('horizontal_position')) {
       this.setCapabilityValue('horizontal_position', HorizontalPosition[stat.windDirectionLR]).catch(this.error);
     }
 
     // Indoor temperature
-    if ('indoorTemp' in stat) {
+    if ('indoorTemp' in stat && this.hasCapability('measure_temperature')) {
       this.setCapabilityValue('measure_temperature', stat.indoorTemp).catch(this.error);
     }
 
     // Operation
-    if ('operation' in stat) {
+    if ('operation' in stat && this.hasCapability('onoff')) {
       this.setCapabilityValue('onoff', stat.operation).catch(this.error);
     }
 
     // Operating mode
-    if ('operationMode' in stat) {
+    if ('operationMode' in stat && this.hasCapability('operating_mode')) {
       this.setCapabilityValue('operating_mode', OperationMode[stat.operationMode]).catch(this.error);
     }
 
     // Outdoor temperature
-    if ('outdoorTemp' in stat) {
+    if ('outdoorTemp' in stat && this.hasCapability('measure_temperature')) {
       this.setCapabilityValue('measure_temperature.outdoor', stat.outdoorTemp).catch(this.error);
     }
 
     // Preset temperature
-    if ('presetTemp' in stat) {
+    if ('presetTemp' in stat && this.hasCapability('target_temperature')) {
       this.setCapabilityValue('target_temperature', stat.presetTemp).catch(this.error);
     }
 
     // Vertical position
-    if ('windDirectionUD' in stat) {
+    if ('windDirectionUD' in stat && this.hasCapability('vertical_position')) {
       this.setCapabilityValue('vertical_position', VerticalPosition[stat.windDirectionUD]).catch(this.error);
     }
 
