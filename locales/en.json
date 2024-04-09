@@ -8,6 +8,7 @@
   "api": {
     "connection": "Device is not reachable.",
     "notSupported": "Device is not supported.",
-    "timeout": "Device is not responding."
+    "timeout": "Device is not responding.",
+    "unavailable": "Device is unavailable."
   }
 }

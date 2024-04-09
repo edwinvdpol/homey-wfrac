@@ -8,6 +8,7 @@
   "api": {
     "connection": "Apparaat is niet bereikbaar.",
     "notSupported": "Apparaat is niet ondersteund.",
-    "timeout": "Apparaat reageert niet."
+    "timeout": "Apparaat reageert niet.",
+    "unavailable": "Apparaat is niet beschikbaar."
   }
 }

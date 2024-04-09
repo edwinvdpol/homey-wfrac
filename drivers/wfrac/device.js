@@ -190,14 +190,14 @@ class WFRACDevice extends Device {
   async onCapabilityFanSpeed(value) {
     this.log(`Fan speed changed to '${value}'`);
 
-    await this.updateDevice({ airFlow: AirFlowNames[value] });
+    await this.queue({ airFlow: AirFlowNames[value] });
   }
 
   // Horizontal position capability changed
   async onCapabilityHorizontalPosition(value) {
     this.log(`Horizontal position changed to '${value}'`);
 
-    await this.updateDevice({
+    await this.queue({
       windDirectionLR: HorizontalPositionNames[value],
       entrust: false,
     });
@@ -207,35 +207,35 @@ class WFRACDevice extends Device {
   async onCapability3dAuto(value) {
     this.log(`3D AUTO changed to '${value}'`);
 
-    await this.updateDevice({ entrust: value });
+    await this.queue({ entrust: value });
   }
 
   // On/off capability changed
   async onCapabilityOnOff(value) {
     this.log(`Operation changed to '${value}'`);
 
-    await this.updateDevice({ operation: value });
+    await this.queue({ operation: value });
   }
 
   // Operating mode capability changed
   async onCapabilityOperatingMode(value) {
     this.log(`Operating mode changed to '${value}'`);
 
-    await this.updateDevice({ operationMode: OperationModeNames[value] });
+    await this.queue({ operationMode: OperationModeNames[value] });
   }
 
   // Target temperature capability changed
   async onCapabilityTargetTemperature(value) {
     this.log(`Target temperature changed to '${value}°C'`);
 
-    await this.updateDevice({ presetTemp: value });
+    await this.queue({ presetTemp: value });
   }
 
   // Vertical position capability changed
   async onCapabilityVerticalPosition(value) {
     this.log(`Vertical position changed to '${value}'`);
 
-    await this.updateDevice({
+    await this.queue({
       windDirectionUD: VerticalPositionNames[value],
       entrust: false,
     });
