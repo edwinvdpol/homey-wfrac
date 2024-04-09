@@ -1,14 +1,16 @@
 {
   "status": {
-    "notRegistered": "Device cannot be operated.",
-    "maxAccounts": "Operation is disabled. Device account limit reached.",
-    "wait": "Waiting for connection...",
-    "wrongFirmware": "Device with firmware __firmware__ is not supported."
+    "waiting": "Waiting for connection..."
   },
-  "api": {
-    "connection": "Device is not reachable.",
-    "notSupported": "Device is not supported.",
-    "timeout": "Device is not responding.",
-    "unavailable": "Device is unavailable."
+  "error": {
+    "connection": "Device is not reachable",
+    "not_supported": "Device is not supported",
+    "timeout": "Device is not responding",
+    "unavailable": "Device is unavailable"
+  },
+  "warning": {
+    "accounts": "Operation is disabled. Device account limit reached.",
+    "firmware": "Device with firmware __firmware__ is not supported.",
+    "unregistered": "Device cannot be operated."
   }
 }

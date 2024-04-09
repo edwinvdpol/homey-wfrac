@@ -18,19 +18,14 @@ class WFRACDevice extends Device {
   // Set account
   async syncAccount() {
     if (this.registered) return null;
-
-    // Device not available
-    if (!this.getAvailable()) {
-      return this.error('Sync account: Device not available');
-    }
+    if (!this.getAvailable()) return null;
 
     // Number of accounts not set
     if (!this.accounts) {
-      return this.error('Sync account: Number of accounts not set');
+      return this.error('[Sync] [Account] Number of accounts not set');
     }
 
-    this.log('Syncing account');
-    this.log('-- Number of accounts:', this.accounts);
+    this.log(`[Sync] [Account] ${this.accounts} accounts`);
 
     // Register account
     if (this.accounts < 4) {
@@ -54,38 +49,30 @@ class WFRACDevice extends Device {
   async syncAirconStat(data = null) {
     if (!data) {
       data = await this.client.getAirconStat();
-
-      if (blank(data)) return;
     }
+
+    if (blank(data)) return;
+
+    this.log('[Sync]', JSON.stringify(data));
 
     // Set available
     this.setAvailable().catch(this.error);
 
-    // Set decoded AirconStat
+    // Set data
     this.airconStat = data.airconStat;
-    this.log('airconStat:', JSON.stringify(this.airconStat));
-
     delete data.airconStat;
-
-    // Set contents
     this.contents = data;
-    this.log('Contents:', JSON.stringify(this.contents));
 
     // Set number of accounts and firmware type
-    this.accounts = Number(data.numOfAccount) || null;
-    this.firmware = data.firmType || null;
+    this.accounts = ('numOfAccount' in data) ? Number(data.numOfAccount) : null;
+    this.firmware = ('firmType' in data) ? data.firmType : null;
 
     data = null;
   }
 
   // Set capabilities
   async syncCapabilities() {
-    // AirconStat not available
-    if (!this.airconStat) {
-      this.error('Sync capabilities: AirconStat not set');
-
-      return;
-    }
+    if (!this.airconStat) return;
 
     let stat = this.airconStat;
 
@@ -139,12 +126,7 @@ class WFRACDevice extends Device {
 
   // Set settings
   async syncSettings() {
-    // Contents not available
-    if (!this.contents) {
-      this.error('Sync settings: Contents not set');
-
-      return;
-    }
+    if (!this.contents) return;
 
     const settings = {};
 
@@ -268,18 +250,15 @@ class WFRACDevice extends Device {
 
   // Register account
   async registerAccount() {
-    // Device not available
-    if (!this.getAvailable()) {
-      return this.error('Register account: Device not available');
-    }
+    if (!this.getAvailable()) return null;
 
-    this.log('Registering account');
-    this.log('-- Operator ID:', this.operatorId);
+    this.log('[Account] Registering');
+    this.log('[Account] Operator ID:', this.operatorId);
 
     // Send account to device
     await this.client.updateAccountInfo();
 
-    this.log('Account registered');
+    this.log('[Account] Registered');
 
     // Mark as registered
     return this.setRegistered(true);
@@ -296,11 +275,11 @@ class WFRACDevice extends Device {
 
     // Too many accounts
     if (this.accounts > 3) {
-      return 'status.maxAccounts';
+      return 'warning.accounts';
     }
 
     // Account not registered yet
-    return 'status.notRegistered';
+    return 'warning.unregistered';
   }
 
   // Set firmware version not supported warning
@@ -308,7 +287,7 @@ class WFRACDevice extends Device {
     if (!this.firmware) return false;
     if (this.firmware === 'WF-RAC') return false;
 
-    const warning = this.homey.__('status.wrongFirmware', { firmware: this.firmware });
+    const warning = this.homey.__('warning.firmware', { firmware: this.firmware });
 
     this.error(`Firmware '${this.firmware}' is not supported`);
     this.setWarning(warning).catch(this.error);
