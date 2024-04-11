@@ -1,4 +1,7 @@
 {
+  "1.1.0": {
+    "en": "Commands are now batched per 500ms to prevent filling up the queue."
+  },
   "1.0.3": {
     "en": "Updated store information."
   },
