@@ -244,7 +244,7 @@ class WFRACDevice extends Device {
 
     // Mark as unregistered
     if (!uninit) {
-      this.setRegistered(false);
+      await this.setRegistered(false);
     }
   }
 
