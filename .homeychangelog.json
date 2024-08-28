@@ -1,17 +1,17 @@
 {
-  "1.1.0": {
-    "en": "Commands are now batched per 500ms to prevent filling up the queue."
-  },
-  "1.0.3": {
-    "en": "Updated store information."
-  },
-  "1.0.2": {
-    "en": "Updated store information and improved flow cards."
+  "1.0.0": {
+    "en": "Initial release."
   },
   "1.0.1": {
     "en": "Stability improvements."
   },
-  "1.0.0": {
-    "en": "Initial release."
+  "1.0.2": {
+    "en": "Updated store information and improved flow cards."
+  },
+  "1.0.3": {
+    "en": "Updated store information."
+  },
+  "1.1.0": {
+    "en": "Commands are now batched per 500ms to prevent filling up the queue."
   }
 }
