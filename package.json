@@ -1,7 +1,7 @@
 {
-  "name": "com.mhi.wfrac",
+  "name": "homey-wfrac",
   "version": "1.1.0",
-  "homepage": "https://github.com/edwinvdpol/com.mhi.wfrac#readme",
+  "homepage": "https://github.com/edwinvdpol/homey-wfrac#readme",
   "license": "SEE LICENSE",
   "author": {
     "name": "Edwin van de Pol",
@@ -16,7 +16,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edwinvdpol/com.mhi.wfrac.git"
+    "url": "https://github.com/edwinvdpol/homey-wfrac.git"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
