@@ -1,12 +1,12 @@
 {
+  "authentication": {
+    "connecting": "Bezig met verbinden..."
+  },
   "error": {
     "connection": "Apparaat is niet bereikbaar",
     "not_supported": "Apparaat is niet ondersteund",
     "timeout": "Apparaat reageert niet",
     "unavailable": "Apparaat is niet beschikbaar"
-  },
-  "status": {
-    "waiting": "Wachten op verbinding..."
   },
   "warning": {
     "accounts": "Bediening is uitgeschakeld. Account limiet van apparaat bereikt.",

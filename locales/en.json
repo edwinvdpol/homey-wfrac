@@ -1,12 +1,12 @@
 {
+  "authentication": {
+    "connecting": "Connecting..."
+  },
   "error": {
     "connection": "Device is not reachable",
     "not_supported": "Device is not supported",
     "timeout": "Device is not responding",
     "unavailable": "Device is unavailable"
-  },
-  "status": {
-    "waiting": "Waiting for connection..."
   },
   "warning": {
     "accounts": "Operation is disabled. Device account limit reached.",
