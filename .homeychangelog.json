@@ -13,5 +13,8 @@
   },
   "1.1.0": {
     "en": "Commands are now batched per 500ms to prevent filling up the queue."
+  },
+  "1.1.1": {
+    "en": "Code maintenance."
   }
 }
