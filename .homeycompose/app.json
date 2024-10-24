@@ -1,7 +1,7 @@
 {
   "id": "com.mhi.wfrac",
   "version": "1.1.1",
-  "compatibility": ">=7.4.0",
+  "compatibility": ">=12.0.0",
   "platforms": [
     "local"
   ],

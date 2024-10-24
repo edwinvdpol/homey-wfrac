@@ -2,7 +2,7 @@
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.mhi.wfrac",
   "version": "1.1.1",
-  "compatibility": ">=7.4.0",
+  "compatibility": ">=12.0.0",
   "platforms": [
     "local"
   ],
@@ -868,7 +868,7 @@
         "en": "Air conditioner",
         "nl": "Airconditioner"
       },
-      "class": "thermostat",
+      "class": "airconditioning",
       "capabilities": [
         "operating_mode",
         "fan_speed",

@@ -3,7 +3,7 @@
     "en": "Air conditioner",
     "nl": "Airconditioner"
   },
-  "class": "thermostat",
+  "class": "airconditioning",
   "capabilities": [
     "operating_mode",
     "fan_speed",
