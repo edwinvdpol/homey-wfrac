@@ -19,5 +19,8 @@
   },
   "1.2.0": {
     "en": "Bugfixes and updated minimum Homey version to >=12.0.0"
+  },
+  "1.2.1": {
+    "en": "Added conditional flows for temperature related capabilities."
   }
 }
