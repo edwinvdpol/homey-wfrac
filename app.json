@@ -366,6 +366,150 @@
       },
       {
         "title": {
+          "en": "Indoor temperature is !{{higher|not higher}} than",
+          "nl": "Binnentemperatuur is !{{hoger|niet hoger}} dan"
+        },
+        "titleFormatted": {
+          "en": "Indoor temperature is !{{higher|not higher}} than [[temperature]]°C",
+          "nl": "Binnentemperatuur is !{{hoger|niet hoger}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=measure_temperature"
+          }
+        ],
+        "id": "measure_temperature_higher"
+      },
+      {
+        "title": {
+          "en": "Indoor temperature is !{{lower|not lower}} than",
+          "nl": "Binnentemperatuur is !{{lager|niet lager}} dan"
+        },
+        "titleFormatted": {
+          "en": "Indoor temperature is !{{lower|not lower}} than [[temperature]]°C",
+          "nl": "Binnentemperatuur is !{{lager|niet lager}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=measure_temperature"
+          }
+        ],
+        "id": "measure_temperature_lower"
+      },
+      {
+        "title": {
+          "en": "Outdoor temperature is !{{higher|not higher}} than",
+          "nl": "Buitentemperatuur is !{{hoger|niet hoger}} dan"
+        },
+        "titleFormatted": {
+          "en": "Outdoor temperature is !{{higher|not higher}} than [[temperature]]°C",
+          "nl": "Buitentemperatuur is !{{hoger|niet hoger}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=measure_temperature.outdoor"
+          }
+        ],
+        "id": "measure_temperature.outdoor_higher"
+      },
+      {
+        "title": {
+          "en": "Outdoor temperature is !{{lower|not lower}} than",
+          "nl": "Buitentemperatuur is !{{lager|niet lager}} dan"
+        },
+        "titleFormatted": {
+          "en": "Outdoor temperature is !{{lower|not lower}} than [[temperature]]°C",
+          "nl": "Buitentemperatuur is !{{lager|niet lager}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=measure_temperature.outdoor"
+          }
+        ],
+        "id": "measure_temperature.outdoor_lower"
+      },
+      {
+        "title": {
           "en": "Operating mode !{{is|is not}}",
           "nl": "Werkingsmodus !{{is|is niet}}"
         },
@@ -428,6 +572,78 @@
           }
         ],
         "id": "operating_mode_is"
+      },
+      {
+        "title": {
+          "en": "Target temperature is !{{higher|not higher}} than",
+          "nl": "Ingestelde temperatuur is !{{hoger|niet hoger}} dan"
+        },
+        "titleFormatted": {
+          "en": "Target temperature is !{{higher|not higher}} than [[temperature]]°C",
+          "nl": "Ingestelde temperatuur is !{{hoger|niet hoger}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=target_temperature"
+          }
+        ],
+        "id": "target_temperature_higher"
+      },
+      {
+        "title": {
+          "en": "Target temperature is !{{lower|not lower}} than",
+          "nl": "Ingestelde temperatuur is !{{lager|niet lager}} dan"
+        },
+        "titleFormatted": {
+          "en": "Target temperature is !{{lower|not lower}} than [[temperature]]°C",
+          "nl": "Ingestelde temperatuur is !{{lager|niet lager}} dan [[temperature]]°C"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "temperature",
+            "title": {
+              "en": "temperature",
+              "nl": "temperatuur"
+            },
+            "placeholder": {
+              "en": "In degrees Celsius (°C)",
+              "nl": "In graden Celsius (°C)"
+            },
+            "min": 18,
+            "max": 30,
+            "step": 0.5
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=target_temperature"
+          }
+        ],
+        "id": "target_temperature_lower"
       },
       {
         "title": {

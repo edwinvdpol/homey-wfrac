@@ -1,0 +1,35 @@
+{
+  "title": {
+    "en": "Outdoor temperature is !{{higher|not higher}} than",
+    "nl": "Buitentemperatuur is !{{hoger|niet hoger}} dan"
+  },
+  "titleFormatted": {
+    "en": "Outdoor temperature is !{{higher|not higher}} than [[temperature]]°C",
+    "nl": "Buitentemperatuur is !{{hoger|niet hoger}} dan [[temperature]]°C"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "number",
+      "name": "temperature",
+      "title": {
+        "en": "temperature",
+        "nl": "temperatuur"
+      },
+      "placeholder": {
+        "en": "In degrees Celsius (°C)",
+        "nl": "In graden Celsius (°C)"
+      },
+      "min": 18,
+      "max": 30,
+      "step": 0.5
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=measure_temperature.outdoor"
+    }
+  ]
+}
