@@ -1,9 +1,9 @@
-Bedien uw Mitsubishi Heavy Industries airconditioner nu vanaf elke locatie met Homey.
+Bedien je Mitsubishi Heavy Industries airconditioner overal ter wereld met Homey.
 
-Controleer de temperatuur in uw kamer(s) terwijl u onderweg bent. Schakel uw airconditioner, waar nodig, in voordat u thuis komt. U weet niet meer of u de airconditioner heeft uitgeschakeld? Schakel uw airconditioner dan uit via Homey.
+Controleer de temperatuur in je kamer(s) terwijl je onderweg bent en schakel, indien nodig, je airconditioner in voordat je thuiskomt. Twijfel je of je de airconditioner hebt uitgezet? Schakel hem eenvoudig op afstand uit via Homey.
 
-Voor een juiste werking van deze Homey App is het noodzakelijk dat uw airconditioner is uitgerust met een WF-RAC WiFi adapter die al geconfigureerd is via de Smart-M-Air app.
+Om deze Homey App te gebruiken, moet je airconditioner zijn uitgerust met een WF-RAC WiFi-adapter die al is geconfigureerd via de Smart-M-Air-app.
 
-Deze Homey App is NIET GESCHIKT om modellen uitgerust met de nieuwere INWFIMHI001I000 WiFi adapter te bedienen die is geconfigureerd via de AC-Cloud app.
+Let op: Deze Homey App is niet compatibel met modellen die de nieuwere INWFIMHI001I000 WiFi-adapter gebruiken en worden geconfigureerd via de AC-Cloud-app.
 
-BELANGRIJK: Zorg ervoor dat de airconditioners statische IP-adressen hebben op uw lokale netwerk.
+Belangrijk: Zorg ervoor dat je airconditioners statische IP-adressen hebben op je lokale netwerk en dat ze zich binnen het bereik van een sterk WiFi-signaal bevinden.

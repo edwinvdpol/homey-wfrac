@@ -2,10 +2,14 @@
 
 ![Homey App Validation](https://github.com/edwinvdpol/homey-wfrac/actions/workflows/validate.yml/badge.svg)
 
-Now control your Mitsubishi Heavy Industries air conditioner from anywhere with Homey.
+Control your Mitsubishi Heavy Industries air conditioner from anywhere with Homey.
 
-Check the temperature in your room(s) while on the move. If necessary, turn on your air conditioner before you get home. You don't remember if you turned off the air conditioner? Then switch off your air conditioner via Homey.
+Monitor the temperature in your room(s) while you're on the go, and, if needed, turn on your air conditioner before arriving home. Unsure if you left the air conditioner on? Simply switch it off remotely using Homey.
 
-For the correct operation of this Homey App, it is necessary that your air conditioner is equipped with a **WF-RAC** WiFi adapter which is already configured via the **Smart-M-Air** app.
+To use this Homey App, your air conditioner must be equipped with a WF-RAC WiFi adapter, already configured via the Smart-M-Air app.
 
-This Homey App is **NOT SUITABLE** for models equipped with the newer INWFIMHI001I000 WiFi adapter which is configured via the AC-Cloud app.
+> [!IMPORTANT]
+> This Homey App is *not compatible* with models that use the newer INWFIMHI001I000 WiFi adapter configured via the AC-Cloud app.
+
+> [!TIP]
+> Ensure that your air conditioners have static IP addresses on your local network and that they are within a strong WiFi signal range.
