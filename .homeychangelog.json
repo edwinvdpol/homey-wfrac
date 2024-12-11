@@ -22,5 +22,8 @@
   },
   "1.2.1": {
     "en": "Added conditional flows for temperature related capabilities."
+  },
+  "1.2.2": {
+    "en": "Improved timings."
   }
 }
