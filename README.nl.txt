@@ -1,9 +1,7 @@
-Bedien je Mitsubishi Heavy Industries airconditioner overal ter wereld met Homey.
+De Mitsubishi WF-RAC Homey App maakt moeiteloze integratie mogelijk tussen je Mitsubishi Electric airconditioners uitgerust met Wi-Fi-adapters en je Homey smart home-systeem. Met deze app kun je de controle over je binnenklimaat nemen en tegelijkertijd comfort en energie-efficiëntie verbeteren.
 
-Controleer de temperatuur in je kamer(s) terwijl je onderweg bent en schakel, indien nodig, je airconditioner in voordat je thuiskomt. Twijfel je of je de airconditioner hebt uitgezet? Schakel hem eenvoudig op afstand uit via Homey.
+De app stelt je in staat om de instellingen van je Mitsubishi Electric airconditioners direct via de Homey-interface te monitoren en aan te passen. Je kunt eenvoudig de temperatuur, ventilatorsnelheid en bedieningsmodi regelen, zodat je altijd een perfect binnenklimaat hebt. Met de krachtige automatiseringsmogelijkheden van Homey kun je flows maken om je airconditioning te synchroniseren met andere slimme apparaten, het energieverbruik te optimaliseren of automatisch aan te passen aan je dagelijkse routines.
 
-Om deze Homey App te gebruiken, moet je airconditioner zijn uitgerust met een WF-RAC WiFi-adapter die al is geconfigureerd via de Smart-M-Air-app.
+Zorg ervoor dat je airconditioners statische IP-adressen hebben op je lokale netwerk en dat ze een sterk en stabiel WiFi-signaal hebben.
 
-Let op: Deze Homey App is niet compatibel met modellen die de nieuwere INWFIMHI001I000 WiFi-adapter gebruiken en worden geconfigureerd via de AC-Cloud-app.
-
-Belangrijk: Zorg ervoor dat je airconditioners statische IP-adressen hebben op je lokale netwerk en dat ze zich binnen het bereik van een sterk WiFi-signaal bevinden.
+Deze app is niet compatibel met modellen die gebruikmaken van de nieuwere INWFIMHI001I000 Wi-Fi-adapter die wordt geconfigureerd via de AC-Cloud-app.
