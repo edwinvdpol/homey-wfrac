@@ -25,5 +25,8 @@
   },
   "1.2.2": {
     "en": "Improved timings."
+  },
+  "1.2.3": {
+    "en": "Reverted \"Improved mutex\""
   }
 }
