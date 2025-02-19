@@ -3,8 +3,10 @@
     "connecting": "Connecting..."
   },
   "error": {
+    "aborted": "Device is not reachable",
     "connection": "Device is not reachable",
     "not_supported": "Device is not supported",
+    "system": "Device is not reachable",
     "timeout": "Device is not responding",
     "unavailable": "Device is unavailable"
   },

@@ -3,8 +3,10 @@
     "connecting": "Bezig met verbinden..."
   },
   "error": {
+    "aborted": "Apparaat is niet bereikbaar",
     "connection": "Apparaat is niet bereikbaar",
     "not_supported": "Apparaat is niet ondersteund",
+    "system": "Apparaat is niet bereikbaar",
     "timeout": "Apparaat reageert niet",
     "unavailable": "Apparaat is niet beschikbaar"
   },
