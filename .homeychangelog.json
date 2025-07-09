@@ -28,5 +28,8 @@
   },
   "1.2.3": {
     "en": "Reverted \"Improved mutex\""
+  },
+  "1.2.4": {
+    "en": "Improved stability when commands were send too fast. Improved logging."
   }
 }
