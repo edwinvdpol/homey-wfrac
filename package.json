@@ -22,7 +22,6 @@
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@drenso/homey-log": "^10.17.0",
     "agentkeepalive": "^4.6.0",
     "async-mutex": "^0.4.0",
     "node-fetch": "^2.7.0"
