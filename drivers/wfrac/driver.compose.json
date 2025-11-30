@@ -13,7 +13,10 @@
     "measure_temperature",
     "target_temperature",
     "onoff",
-    "3d_auto"
+    "3d_auto",
+    "meter_power",
+    "meter_power.today",
+    "meter_power.hour"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
@@ -40,6 +43,24 @@
       "min": 18,
       "max": 30,
       "step": 0.5
+    },
+    "meter_power": {
+      "title": {
+        "en": "Total energy",
+        "nl": "Totaal verbruik"
+      }
+    },
+    "meter_power.today": {
+      "title": {
+        "en": "Energy today",
+        "nl": "Verbruik vandaag"
+      }
+    },
+    "meter_power.hour": {
+      "title": {
+        "en": "Energy this hour",
+        "nl": "Verbruik dit uur"
+      }
     }
   },
   "$extends": [
