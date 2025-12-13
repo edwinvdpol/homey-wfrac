@@ -1,0 +1,11 @@
+{
+  "type": "text",
+  "label": {
+    "en": "Manual IP address",
+    "nl": "Handmatig IP-adres"
+  },
+  "hint": {
+    "en": "Fill in this field if you want to use a fixed IP address. Leave this field blank if Homey can discover the device on the network itself.",
+    "nl": "Vul dit veld in wanneer je een vast IP adres wil gebruiken. Laat dit veld leeg wanneer Homey het apparaat zelf kan ontdekken op het netwerk."
+  }
+}

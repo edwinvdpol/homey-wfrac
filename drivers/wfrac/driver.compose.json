@@ -1,47 +1,4 @@
 {
-  "name": {
-    "en": "Air conditioner",
-    "nl": "Airconditioner"
-  },
-  "class": "airconditioning",
-  "capabilities": [
-    "operating_mode",
-    "fan_speed",
-    "vertical_position",
-    "horizontal_position",
-    "measure_temperature.outdoor",
-    "measure_temperature",
-    "target_temperature",
-    "onoff",
-    "3d_auto"
-  ],
-  "capabilitiesOptions": {
-    "measure_temperature": {
-      "title": {
-        "en": "Indoor temperature",
-        "nl": "Binnentemperatuur"
-      },
-      "desc": {
-        "en": "Indoor temperature in degrees Celsius (°C)",
-        "nl": "Binnentemperatuur in graden Celsius (°C)"
-      }
-    },
-    "measure_temperature.outdoor": {
-      "title": {
-        "en": "Outdoor temperature",
-        "nl": "Buitentemperatuur"
-      },
-      "desc": {
-        "en": "Outdoor temperature in degrees Celsius (°C)",
-        "nl": "Buitentemperatuur in graden Celsius (°C)"
-      }
-    },
-    "target_temperature": {
-      "min": 18,
-      "max": 30,
-      "step": 0.5
-    }
-  },
   "$extends": [
     "defaults"
   ]
