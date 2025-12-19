@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "async-mutex": "^0.4.0",
+    "fetch-retry": "^6.0.0",
     "node-fetch": "^2.7.0"
   },
   "devDependencies": {
