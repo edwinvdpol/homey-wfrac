@@ -52,5 +52,8 @@
   },
   "1.3.6": {
     "en": "Added retry logic."
+  },
+  "1.3.7": {
+    "en": "Fixed setting value."
   }
 }
