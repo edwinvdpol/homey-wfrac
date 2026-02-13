@@ -70,5 +70,8 @@
   },
   "1.3.12": {
     "en": "Fix availability."
+  },
+  "1.3.13": {
+    "en": "Improved stability."
   }
 }
