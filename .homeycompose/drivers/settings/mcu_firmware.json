@@ -6,6 +6,5 @@
   "hint": {
     "en": "Firmware version of the microcontroller unit",
     "nl": "Firmware versie van de microcontroller unit"
-  },
-  "value": "-"
+  }
 }

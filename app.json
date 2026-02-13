@@ -1141,8 +1141,7 @@
               "hint": {
                 "en": "The current IP address of the device being used by Homey. To use a fixed IP address, enter it in the Manual IP address field below.",
                 "nl": "Het huidige IP adres van het apparaat welke door Homey gebruikt wordt. Om een vast IP adres te gebruiken, kun je deze invullen in het Handmatig IP-adres veld hieronder."
-              },
-              "value": "-"
+              }
             },
             {
               "id": "ip_address_manual",
@@ -1175,8 +1174,7 @@
               "hint": {
                 "en": "Number of registered accounts on the device",
                 "nl": "Aantal geregistreerde accounts op het apparaat"
-              },
-              "value": "-"
+              }
             },
             {
               "id": "firmware_type",
@@ -1187,8 +1185,7 @@
               "hint": {
                 "en": "Firmware type of the module",
                 "nl": "Firmware type van de module"
-              },
-              "value": "-"
+              }
             },
             {
               "id": "wifi_firmware",
@@ -1199,8 +1196,7 @@
               "hint": {
                 "en": "Firmware version of the wireless unit",
                 "nl": "Firmware versie van de wireless unit"
-              },
-              "value": "-"
+              }
             },
             {
               "id": "mcu_firmware",
@@ -1211,8 +1207,7 @@
               "hint": {
                 "en": "Firmware version of the microcontroller unit",
                 "nl": "Firmware versie van de microcontroller unit"
-              },
-              "value": "-"
+              }
             }
           ]
         }

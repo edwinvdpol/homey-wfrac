@@ -7,6 +7,5 @@
   "hint": {
     "en": "The current IP address of the device being used by Homey. To use a fixed IP address, enter it in the Manual IP address field below.",
     "nl": "Het huidige IP adres van het apparaat welke door Homey gebruikt wordt. Om een vast IP adres te gebruiken, kun je deze invullen in het Handmatig IP-adres veld hieronder."
-  },
-  "value": "-"
+  }
 }
