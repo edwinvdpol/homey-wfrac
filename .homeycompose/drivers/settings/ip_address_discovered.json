@@ -1,0 +1,11 @@
+{
+  "type": "text",
+  "label": {
+    "en": "Discovered IP address",
+    "nl": "Gedetecteerd IP-adres"
+  },
+  "hint": {
+    "en": "The IP address of the device as advertised via mDNS-SD.",
+    "nl": "Het IP-adres van het apparaat zoals geadverteerd via mDNS-SD."
+  }
+}

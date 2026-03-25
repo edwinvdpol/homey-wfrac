@@ -22,8 +22,7 @@
     "agentkeepalive": "^4.6.0",
     "async-mutex": "^0.4.0",
     "fetch-retry": "^6.0.0",
-    "node-fetch": "^2.7.0",
-    "pem": "^1.14.8"
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12"

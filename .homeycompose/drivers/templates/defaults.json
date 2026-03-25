@@ -1,8 +1,4 @@
 {
-  "name": {
-    "en": "Air conditioner",
-    "nl": "Airconditioner"
-  },
   "class": "airconditioning",
   "capabilities": [
     "operating_mode",
@@ -76,10 +72,16 @@
       },
       "children": [
         {
+          "$extends": "protocol"
+        },
+        {
           "$extends": "ip_address"
         },
         {
           "$extends": "ip_address_manual"
+        },
+        {
+          "$extends": "ip_address_discovered"
         }
       ]
     },
@@ -91,16 +93,22 @@
       },
       "children": [
         {
-          "$extends": "accounts"
+          "$extends": "aircon_id"
         },
         {
-          "$extends": "firmware_type"
+          "$extends": "operator_id"
         },
         {
           "$extends": "wifi_firmware"
         },
         {
           "$extends": "mcu_firmware"
+        },
+        {
+          "$extends": "firmware_type"
+        },
+        {
+          "$extends": "accounts"
         }
       ]
     }

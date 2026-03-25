@@ -1,4 +1,8 @@
 {
+  "name": {
+    "en": "Air conditioner",
+    "nl": "Airconditioner"
+  },
   "$extends": [
     "defaults"
   ]

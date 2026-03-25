@@ -1,0 +1,10 @@
+{
+  "type": "label",
+  "label": {
+    "en": "Aircon ID"
+  },
+  "hint": {
+    "en": "Unique ID which the manufacturer assigned to the airconditioner.",
+    "nl": "Unieke identificatiecode die de fabrikant aan de airconditioner heeft toegekend."
+  }
+}

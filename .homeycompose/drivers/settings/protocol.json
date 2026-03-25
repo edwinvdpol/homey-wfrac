@@ -1,0 +1,27 @@
+{
+  "type": "dropdown",
+  "label": {
+    "en": "Secure connection",
+    "nl": "Beveiligde verbinding"
+  },
+  "values": [
+    {
+      "id": "http",
+      "label": {
+        "en": "No",
+        "nl": "Nee"
+      }
+    },
+    {
+      "id": "https",
+      "label": {
+        "en": "Yes",
+        "nl": "Ja"
+      }
+    }
+  ],
+  "hint": {
+    "en": "Use a secure or normal connection. Adjust this setting only when a connection to the device cannot be established.",
+    "nl": "Gebruik een beveiligde of normale verbinding. Pas deze instelling alleen aan wanneer er geen verbinding kan worden gemaakt met het apparaat."
+  }
+}

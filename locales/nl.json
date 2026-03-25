@@ -6,6 +6,7 @@
     "aborted": "Apparaat is niet bereikbaar",
     "connection": "Apparaat is niet bereikbaar",
     "not_supported": "Apparaat is niet ondersteund",
+    "protocol": "Apparaat ondersteunt geen beveiligde verbindingen. Schakel beveiligde verbindingen uit in de apparaatinstellingen.",
     "system": "Apparaat is niet bereikbaar",
     "timeout": "Apparaat reageert niet",
     "unavailable": "Apparaat is niet beschikbaar"
