@@ -76,5 +76,8 @@
   },
   "1.4.0": {
     "en": "Added secure connection and other various settings."
+  },
+  "1.4.1": {
+    "en": "Updated API URL."
   }
 }
