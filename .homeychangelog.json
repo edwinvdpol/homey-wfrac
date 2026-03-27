@@ -79,5 +79,8 @@
   },
   "1.4.1": {
     "en": "Updated API URL."
+  },
+  "1.4.2": {
+    "en": "Fix protocol."
   }
 }
