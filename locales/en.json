@@ -3,11 +3,9 @@
     "connecting": "Connecting..."
   },
   "error": {
-    "aborted": "Device is not reachable",
     "connection": "Device is not reachable",
     "not_supported": "Device is not supported",
     "protocol": "Device does not support secure connections. Please disable secure connection in device settings.",
-    "system": "Device is not reachable",
     "timeout": "Device is not responding",
     "unavailable": "Device is unavailable"
   },
