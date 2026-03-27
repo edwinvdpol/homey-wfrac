@@ -82,5 +82,8 @@
   },
   "1.4.2": {
     "en": "Fix protocol."
+  },
+  "1.4.3": {
+    "en": "Fix protocol check."
   }
 }
