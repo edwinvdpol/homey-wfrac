@@ -1181,7 +1181,7 @@
             },
             {
               "id": "ip_address_discovered",
-              "type": "text",
+              "type": "label",
               "label": {
                 "en": "Discovered IP address",
                 "nl": "Gedetecteerd IP-adres"
