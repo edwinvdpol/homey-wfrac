@@ -85,5 +85,8 @@
   },
   "1.4.3": {
     "en": "Fix protocol check."
+  },
+  "1.4.4": {
+    "en": "Improved connectivity to device."
   }
 }
