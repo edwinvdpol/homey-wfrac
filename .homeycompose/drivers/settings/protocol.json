@@ -4,6 +4,7 @@
     "en": "Secure connection",
     "nl": "Beveiligde verbinding"
   },
+  "value": "",
   "values": [
     {
       "id": "http",

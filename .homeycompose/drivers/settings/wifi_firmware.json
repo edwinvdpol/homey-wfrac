@@ -3,6 +3,7 @@
   "label": {
     "en": "Wireless unit"
   },
+  "value": "",
   "hint": {
     "en": "Firmware version of the wireless unit",
     "nl": "Firmware versie van de wireless unit"

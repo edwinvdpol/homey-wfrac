@@ -1134,6 +1134,7 @@
                 "en": "Secure connection",
                 "nl": "Beveiligde verbinding"
               },
+              "value": "",
               "values": [
                 {
                   "id": "http",
@@ -1162,6 +1163,7 @@
                 "en": "Current IP address",
                 "nl": "Huidig IP-adres"
               },
+              "value": "",
               "hint": {
                 "en": "The current IP address of the device being used by Homey. To use a fixed IP address, enter it in the Manual IP address field below.",
                 "nl": "Het huidige IP adres van het apparaat welke door Homey gebruikt wordt. Om een vast IP adres te gebruiken, kun je deze invullen in het Handmatig IP-adres veld hieronder."
@@ -1174,6 +1176,7 @@
                 "en": "Manual IP address",
                 "nl": "Handmatig IP-adres"
               },
+              "value": "",
               "hint": {
                 "en": "Fill in this field if you want to use a fixed IP address. Leave this field blank if Homey can discover the device on the network itself.",
                 "nl": "Vul dit veld in wanneer je een vast IP adres wil gebruiken. Laat dit veld leeg wanneer Homey het apparaat zelf kan ontdekken op het netwerk."
@@ -1186,6 +1189,7 @@
                 "en": "Discovered IP address",
                 "nl": "Gedetecteerd IP-adres"
               },
+              "value": "",
               "hint": {
                 "en": "The IP address of the device as advertised via mDNS-SD.",
                 "nl": "Het IP-adres van het apparaat zoals geadverteerd via mDNS-SD."
@@ -1206,6 +1210,7 @@
               "label": {
                 "en": "Aircon ID"
               },
+              "value": "",
               "hint": {
                 "en": "Unique ID which the manufacturer assigned to the airconditioner.",
                 "nl": "Unieke identificatiecode die de fabrikant aan de airconditioner heeft toegekend."
@@ -1217,6 +1222,7 @@
               "label": {
                 "en": "Operator ID"
               },
+              "value": "",
               "hint": {
                 "en": "Unique user ID which is created when registering the user with the airconditioner.",
                 "nl": "Unieke gebruikers-ID die is aangemaakt bij de registratie van de gebruiker bij de airconditioner."
@@ -1228,6 +1234,7 @@
               "label": {
                 "en": "Wireless unit"
               },
+              "value": "",
               "hint": {
                 "en": "Firmware version of the wireless unit",
                 "nl": "Firmware versie van de wireless unit"
@@ -1239,6 +1246,7 @@
               "label": {
                 "en": "Microcontroller"
               },
+              "value": "",
               "hint": {
                 "en": "Firmware version of the microcontroller unit.",
                 "nl": "Firmware versie van de microcontroller unit."
@@ -1250,6 +1258,7 @@
               "label": {
                 "en": "Type"
               },
+              "value": "",
               "hint": {
                 "en": "Firmware type of the module.",
                 "nl": "Firmware type van de module."
@@ -1262,6 +1271,7 @@
                 "en": "Number of accounts",
                 "nl": "Aantal accounts"
               },
+              "value": "",
               "hint": {
                 "en": "Number of registered accounts on the device.",
                 "nl": "Aantal geregistreerde accounts op het apparaat."

@@ -3,6 +3,7 @@
   "label": {
     "en": "Operator ID"
   },
+  "value": "",
   "hint": {
     "en": "Unique user ID which is created when registering the user with the airconditioner.",
     "nl": "Unieke gebruikers-ID die is aangemaakt bij de registratie van de gebruiker bij de airconditioner."
