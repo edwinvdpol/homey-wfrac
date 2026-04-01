@@ -88,5 +88,8 @@
   },
   "1.4.4": {
     "en": "Improved connectivity to device."
+  },
+  "1.4.5": {
+    "en": "Fix Homey (early 2019) issues."
   }
 }
