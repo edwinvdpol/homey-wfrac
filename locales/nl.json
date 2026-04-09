@@ -3,13 +3,13 @@
     "connecting": "Bezig met verbinden..."
   },
   "error": {
-    "connection": "Apparaat is niet bereikbaar",
+    "connection": "Apparaat is niet bereikbaar.",
     "invalid_ip": "Handmatig IP-adres is ongeldig. Controleer het adres en probeer het opnieuw.",
-    "not_supported": "Apparaat is niet ondersteund",
+    "not_supported": "Apparaat is niet ondersteund.",
     "operator_id": "Apparaat heeft geen operator ID. Verwijder dit apparaat en voeg deze opnieuw toe.",
     "protocol": "Apparaat ondersteunt geen beveiligde verbindingen. Schakel beveiligde verbindingen uit in de apparaatinstellingen.",
-    "timeout": "Apparaat reageert niet",
-    "unavailable": "Apparaat is niet beschikbaar"
+    "timeout": "Apparaat reageert niet.",
+    "unavailable": "Apparaat is niet beschikbaar."
   },
   "warning": {
     "accounts": "Bediening is uitgeschakeld. Account limiet van apparaat bereikt.",
