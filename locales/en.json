@@ -3,12 +3,13 @@
     "connecting": "Connecting..."
   },
   "error": {
-    "aborted": "Device is not reachable",
-    "connection": "Device is not reachable",
-    "not_supported": "Device is not supported",
-    "system": "Device is not reachable",
-    "timeout": "Device is not responding",
-    "unavailable": "Device is unavailable"
+    "connection": "Device is not reachable.",
+    "invalid_ip": "Manual IP address is invalid. Please check the address and try again.",
+    "not_supported": "Device is not supported.",
+    "operator_id": "Device is missing an operator ID. Remove this device and add it again.",
+    "protocol": "Device does not support secure connections. Disable secure connection in device settings.",
+    "timeout": "Device is not responding.",
+    "unavailable": "Device is unavailable."
   },
   "warning": {
     "accounts": "Operation is disabled. Device account limit reached.",

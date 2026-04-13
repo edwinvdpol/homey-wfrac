@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.mhi.wfrac",
-  "version": "1.3.2",
+  "version": "1.4.5",
   "compatibility": ">=12.0.0",
   "platforms": [
     "local"
@@ -172,6 +172,48 @@
           }
         ],
         "id": "operating_mode_changed"
+      },
+      {
+        "title": {
+          "en": "Vacant property mode turned off",
+          "nl": "Leegstaand pand modus uitgezet"
+        },
+        "hint": {
+          "en": "This flowcard triggers when vacant property mode was turned off.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer leegstaand pand modus uitgezet werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_false"
+      },
+      {
+        "title": {
+          "en": "Vacant property mode turned on",
+          "nl": "Leegstaand pand modus aangezet"
+        },
+        "hint": {
+          "en": "This flowcard triggers when vacant property mode was turned on.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer leegstaand pand modus aangezet werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_true"
       },
       {
         "title": {
@@ -647,6 +689,23 @@
       },
       {
         "title": {
+          "en": "Vacant property mode is turned !{{on|off}}",
+          "nl": "Leegstaand pand modus is !{{aan|uit}}"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_is"
+      },
+      {
+        "title": {
           "en": "Vertical airflow !{{is|is not}}",
           "nl": "Verticale luchtstroom !{{is|is niet}}"
         },
@@ -984,6 +1043,48 @@
       },
       {
         "title": {
+          "en": "Turn off vacant property mode",
+          "nl": "Zet leegstaand pand modus uit"
+        },
+        "hint": {
+          "en": "Use this flowcard to turn off vacant property mode.",
+          "nl": "Gebruik deze kaart om leegstaand pand modus uit te zetten."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_off"
+      },
+      {
+        "title": {
+          "en": "Turn on vacant property mode",
+          "nl": "Zet leegstaand pand modus aan"
+        },
+        "hint": {
+          "en": "Use this flowcard to turn on vacant property mode.",
+          "nl": "Gebruik deze kaart om leegstaand pand modus aan te zetten."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_on"
+      },
+      {
+        "title": {
           "en": "Set vertical airflow",
           "nl": "Zet verticale luchtstroom"
         },
@@ -1055,35 +1156,6 @@
   },
   "drivers": [
     {
-      "images": {
-        "small": "/drivers/wfrac/assets/images/small.png",
-        "large": "/drivers/wfrac/assets/images/large.png",
-        "xlarge": "/drivers/wfrac/assets/images/xlarge.png"
-      },
-      "platforms": [
-        "local"
-      ],
-      "connectivity": [
-        "lan"
-      ],
-      "discovery": "beaver",
-      "pair": [
-        {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
-        },
-        {
-          "id": "add_devices",
-          "template": "add_devices"
-        }
-      ],
-      "name": {
-        "en": "Air conditioner",
-        "nl": "Airconditioner"
-      },
       "class": "airconditioning",
       "capabilities": [
         "operating_mode",
@@ -1095,6 +1167,7 @@
         "target_temperature",
         "onoff",
         "3d_auto",
+        "vacant_property_mode",
         "meter_power",
         "meter_power.today",
         "meter_power.hour"
@@ -1120,15 +1193,16 @@
             "nl": "Buitentemperatuur in graden Celsius (°C)"
           }
         },
-        "target_temperature": {
-          "min": 18,
-          "max": 30,
-          "step": 0.5
-        },
         "meter_power": {
           "title": {
             "en": "Total energy",
             "nl": "Totaal verbruik"
+          }
+        },
+        "meter_power.hour": {
+          "title": {
+            "en": "Energy this hour",
+            "nl": "Verbruik dit uur"
           }
         },
         "meter_power.today": {
@@ -1137,89 +1211,145 @@
             "nl": "Verbruik vandaag"
           }
         },
-        "meter_power.hour": {
-          "title": {
-            "en": "Energy this hour",
-            "nl": "Verbruik dit uur"
-          }
+        "target_temperature": {
+          "min": 10,
+          "max": 33,
+          "step": 0.5
         }
       },
-      "id": "wfrac",
+      "images": {
+        "small": "/drivers/wfrac/assets/images/small.png",
+        "large": "/drivers/wfrac/assets/images/large.png",
+        "xlarge": "/drivers/wfrac/assets/images/xlarge.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "discovery": "beaver",
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
       "settings": [
         {
           "type": "group",
           "label": {
-            "en": "General",
-            "nl": "Algemeen"
+            "en": "Connectivity",
+            "nl": "Connectiviteit"
           },
           "children": [
             {
-              "id": "accounts",
-              "type": "label",
+              "id": "protocol",
+              "type": "dropdown",
               "label": {
-                "en": "Number of accounts",
-                "nl": "Aantal accounts"
+                "en": "Secure connection",
+                "nl": "Beveiligde verbinding"
               },
+              "value": "",
+              "values": [
+                {
+                  "id": "http",
+                  "label": {
+                    "en": "No",
+                    "nl": "Nee"
+                  }
+                },
+                {
+                  "id": "https",
+                  "label": {
+                    "en": "Yes",
+                    "nl": "Ja"
+                  }
+                }
+              ],
               "hint": {
-                "en": "Number of registered accounts on the device",
-                "nl": "Aantal geregistreerde accounts op het apparaat"
-              },
-              "value": "-"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Network",
-            "nl": "Netwerk"
-          },
-          "children": [
+                "en": "Use a secure or normal connection. Adjust this setting only when a connection to the device cannot be established.",
+                "nl": "Gebruik een beveiligde of normale verbinding. Pas deze instelling alleen aan wanneer er geen verbinding kan worden gemaakt met het apparaat."
+              }
+            },
             {
               "id": "ip_address",
               "type": "label",
               "label": {
-                "en": "IP address",
-                "nl": "IP adres"
+                "en": "Current IP address",
+                "nl": "Huidig IP-adres"
               },
+              "value": "",
               "hint": {
-                "en": "IP address of the device",
-                "nl": "Netwerk IP adres van het apparaat"
-              },
-              "value": "-"
+                "en": "The current IP address of the device being used by Homey. To use a fixed IP address, enter it in the Manual IP address field below.",
+                "nl": "Het huidige IP adres van het apparaat welke door Homey gebruikt wordt. Om een vast IP adres te gebruiken, kun je deze invullen in het Handmatig IP-adres veld hieronder."
+              }
             },
             {
-              "id": "port",
+              "id": "ip_address_manual",
+              "type": "text",
+              "label": {
+                "en": "Manual IP address",
+                "nl": "Handmatig IP-adres"
+              },
+              "value": "",
+              "hint": {
+                "en": "Fill in this field if you want to use a fixed IP address. Leave this field blank if Homey can discover the device on the network itself.",
+                "nl": "Vul dit veld in wanneer je een vast IP adres wil gebruiken. Laat dit veld leeg wanneer Homey het apparaat zelf kan ontdekken op het netwerk."
+              }
+            },
+            {
+              "id": "ip_address_discovered",
               "type": "label",
               "label": {
-                "en": "Port",
-                "nl": "Poort"
+                "en": "Discovered IP address",
+                "nl": "Gedetecteerd IP-adres"
               },
+              "value": "",
               "hint": {
-                "en": "Port number used for communication",
-                "nl": "Poortnummer die gebruikt wordt voor communicatie"
-              },
-              "value": "-"
+                "en": "The IP address of the device as advertised via mDNS-SD.",
+                "nl": "Het IP-adres van het apparaat zoals geadverteerd via mDNS-SD."
+              }
             }
           ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Firmware"
+            "en": "Product",
+            "nl": "Product"
           },
           "children": [
             {
-              "id": "firmware_type",
+              "id": "aircon_id",
               "type": "label",
               "label": {
-                "en": "Type"
+                "en": "Aircon ID"
               },
+              "value": "",
               "hint": {
-                "en": "Firmware type of the module",
-                "nl": "Firmware type van de module"
+                "en": "Unique ID which the manufacturer assigned to the airconditioner.",
+                "nl": "Unieke identificatiecode die de fabrikant aan de airconditioner heeft toegekend."
+              }
+            },
+            {
+              "id": "operator_id",
+              "type": "label",
+              "label": {
+                "en": "Operator ID"
               },
-              "value": "-"
+              "value": "",
+              "hint": {
+                "en": "Unique user ID which is created when registering the user with the airconditioner.",
+                "nl": "Unieke gebruikers-ID die is aangemaakt bij de registratie van de gebruiker bij de airconditioner."
+              }
             },
             {
               "id": "wifi_firmware",
@@ -1227,11 +1357,11 @@
               "label": {
                 "en": "Wireless unit"
               },
+              "value": "",
               "hint": {
                 "en": "Firmware version of the wireless unit",
                 "nl": "Firmware versie van de wireless unit"
-              },
-              "value": "-"
+              }
             },
             {
               "id": "mcu_firmware",
@@ -1239,15 +1369,45 @@
               "label": {
                 "en": "Microcontroller"
               },
+              "value": "",
               "hint": {
-                "en": "Firmware version of the microcontroller unit",
-                "nl": "Firmware versie van de microcontroller unit"
+                "en": "Firmware version of the microcontroller unit.",
+                "nl": "Firmware versie van de microcontroller unit."
+              }
+            },
+            {
+              "id": "firmware_type",
+              "type": "label",
+              "label": {
+                "en": "Type"
               },
-              "value": "-"
+              "value": "",
+              "hint": {
+                "en": "Firmware type of the module.",
+                "nl": "Firmware type van de module."
+              }
+            },
+            {
+              "id": "accounts",
+              "type": "label",
+              "label": {
+                "en": "Number of accounts",
+                "nl": "Aantal accounts"
+              },
+              "value": "",
+              "hint": {
+                "en": "Number of registered accounts on the device.",
+                "nl": "Aantal geregistreerde accounts op het apparaat."
+              }
             }
           ]
         }
-      ]
+      ],
+      "name": {
+        "en": "Air conditioner",
+        "nl": "Airconditioner"
+      },
+      "id": "wfrac"
     }
   ],
   "capabilities": {
@@ -1437,6 +1597,26 @@
           }
         }
       ]
+    },
+    "vacant_property_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "Vacant property mode",
+        "nl": "Leegstaand pand modus"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Vacant property mode turned on",
+        "nl": "Leegstaand pand modus aangezet"
+      },
+      "insightsTitleFalse": {
+        "en": "Vacant property mode turned off",
+        "nl": "Leegstaand pand modus uitgezet"
+      },
+      "uiQuickAction": false,
+      "uiComponent": "toggle"
     },
     "vertical_position": {
       "type": "enum",

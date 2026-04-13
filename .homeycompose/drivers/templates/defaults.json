@@ -1,4 +1,65 @@
 {
+  "class": "airconditioning",
+  "capabilities": [
+    "operating_mode",
+    "fan_speed",
+    "vertical_position",
+    "horizontal_position",
+    "measure_temperature.outdoor",
+    "measure_temperature",
+    "target_temperature",
+    "onoff",
+    "3d_auto",
+    "vacant_property_mode",
+    "meter_power",
+    "meter_power.today",
+    "meter_power.hour"
+  ],
+  "capabilitiesOptions": {
+    "measure_temperature": {
+      "title": {
+        "en": "Indoor temperature",
+        "nl": "Binnentemperatuur"
+      },
+      "desc": {
+        "en": "Indoor temperature in degrees Celsius (°C)",
+        "nl": "Binnentemperatuur in graden Celsius (°C)"
+      }
+    },
+    "measure_temperature.outdoor": {
+      "title": {
+        "en": "Outdoor temperature",
+        "nl": "Buitentemperatuur"
+      },
+      "desc": {
+        "en": "Outdoor temperature in degrees Celsius (°C)",
+        "nl": "Buitentemperatuur in graden Celsius (°C)"
+      }
+    },
+    "meter_power": {
+      "title": {
+        "en": "Total energy",
+        "nl": "Totaal verbruik"
+      }
+    },
+    "meter_power.hour": {
+      "title": {
+        "en": "Energy this hour",
+        "nl": "Verbruik dit uur"
+      }
+    },
+    "meter_power.today": {
+      "title": {
+        "en": "Energy today",
+        "nl": "Verbruik vandaag"
+      }
+    },
+    "target_temperature": {
+      "min": 10,
+      "max": 33,
+      "step": 0.5
+    }
+  },
   "images": {
     "small": "{{driverAssetsPath}}/images/small.png",
     "large": "{{driverAssetsPath}}/images/large.png",
@@ -22,6 +83,56 @@
     {
       "id": "add_devices",
       "template": "add_devices"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Connectivity",
+        "nl": "Connectiviteit"
+      },
+      "children": [
+        {
+          "$extends": "protocol"
+        },
+        {
+          "$extends": "ip_address"
+        },
+        {
+          "$extends": "ip_address_manual"
+        },
+        {
+          "$extends": "ip_address_discovered"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Product",
+        "nl": "Product"
+      },
+      "children": [
+        {
+          "$extends": "aircon_id"
+        },
+        {
+          "$extends": "operator_id"
+        },
+        {
+          "$extends": "wifi_firmware"
+        },
+        {
+          "$extends": "mcu_firmware"
+        },
+        {
+          "$extends": "firmware_type"
+        },
+        {
+          "$extends": "accounts"
+        }
+      ]
     }
   ]
 }
