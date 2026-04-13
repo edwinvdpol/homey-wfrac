@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Turn on vacant property mode",
+    "nl": "Zet leegstaand pand modus aan"
+  },
+  "hint": {
+    "en": "Use this flowcard to turn on vacant property mode.",
+    "nl": "Gebruik deze kaart om leegstaand pand modus aan te zetten."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Vacant property mode is turned !{{on|off}}",
+    "nl": "Leegstaand pand modus is !{{aan|uit}}"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+    }
+  ]
+}

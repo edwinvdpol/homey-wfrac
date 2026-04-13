@@ -40,5 +40,56 @@
   },
   "1.3.2": {
     "en": "Attempt to fix connection errors."
+  },
+  "1.3.3": {
+    "en": "Added manual IP device setting. Increased refresh interval."
+  },
+  "1.3.4": {
+    "en": "Increased timeout."
+  },
+  "1.3.5": {
+    "en": "Removed timeout."
+  },
+  "1.3.6": {
+    "en": "Added retry logic."
+  },
+  "1.3.7": {
+    "en": "Fixed setting value."
+  },
+  "1.3.8": {
+    "en": "Fix setting value."
+  },
+  "1.3.9": {
+    "en": "Fix setting value."
+  },
+  "1.3.10": {
+    "en": "Extensive logging and updated connection."
+  },
+  "1.3.11": {
+    "en": " Improved address resolution."
+  },
+  "1.3.12": {
+    "en": "Fix availability."
+  },
+  "1.3.13": {
+    "en": "Improved stability."
+  },
+  "1.4.0": {
+    "en": "Added secure connection and other various settings."
+  },
+  "1.4.1": {
+    "en": "Updated API URL."
+  },
+  "1.4.2": {
+    "en": "Fix protocol."
+  },
+  "1.4.3": {
+    "en": "Fix protocol check."
+  },
+  "1.4.4": {
+    "en": "Improved connectivity to device."
+  },
+  "1.4.5": {
+    "en": "Fix Homey (early 2019) issues."
   }
 }

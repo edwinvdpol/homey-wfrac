@@ -3,9 +3,9 @@
   "label": {
     "en": "Type"
   },
+  "value": "",
   "hint": {
-    "en": "Firmware type of the module",
-    "nl": "Firmware type van de module"
-  },
-  "value": "-"
+    "en": "Firmware type of the module.",
+    "nl": "Firmware type van de module."
+  }
 }

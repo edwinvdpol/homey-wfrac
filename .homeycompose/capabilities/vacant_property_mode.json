@@ -1,0 +1,20 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Vacant property mode",
+    "nl": "Leegstaand pand modus"
+  },
+  "getable": true,
+  "setable": true,
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Vacant property mode turned on",
+    "nl": "Leegstaand pand modus aangezet"
+  },
+  "insightsTitleFalse": {
+    "en": "Vacant property mode turned off",
+    "nl": "Leegstaand pand modus uitgezet"
+  },
+  "uiQuickAction": false,
+  "uiComponent": "toggle"
+}
