@@ -175,6 +175,48 @@
       },
       {
         "title": {
+          "en": "Vacant property mode turned off",
+          "nl": "Leegstaand pand modus uitgezet"
+        },
+        "hint": {
+          "en": "This flowcard triggers when vacant property mode was turned off.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer leegstaand pand modus uitgezet werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_false"
+      },
+      {
+        "title": {
+          "en": "Vacant property mode turned on",
+          "nl": "Leegstaand pand modus aangezet"
+        },
+        "hint": {
+          "en": "This flowcard triggers when vacant property mode was turned on.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer leegstaand pand modus aangezet werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_true"
+      },
+      {
+        "title": {
           "en": "Vertical airflow changed",
           "nl": "Verticale luchtstroom is veranderd"
         },
@@ -647,6 +689,23 @@
       },
       {
         "title": {
+          "en": "Vacant property mode is turned !{{on|off}}",
+          "nl": "Leegstaand pand modus is !{{aan|uit}}"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_is"
+      },
+      {
+        "title": {
           "en": "Vertical airflow !{{is|is not}}",
           "nl": "Verticale luchtstroom !{{is|is niet}}"
         },
@@ -984,6 +1043,48 @@
       },
       {
         "title": {
+          "en": "Turn off vacant property mode",
+          "nl": "Zet leegstaand pand modus uit"
+        },
+        "hint": {
+          "en": "Use this flowcard to turn off vacant property mode.",
+          "nl": "Gebruik deze kaart om leegstaand pand modus uit te zetten."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_off"
+      },
+      {
+        "title": {
+          "en": "Turn on vacant property mode",
+          "nl": "Zet leegstaand pand modus aan"
+        },
+        "hint": {
+          "en": "Use this flowcard to turn on vacant property mode.",
+          "nl": "Gebruik deze kaart om leegstaand pand modus aan te zetten."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=vacant_property_mode"
+          }
+        ],
+        "id": "vacant_property_mode_on"
+      },
+      {
+        "title": {
           "en": "Set vertical airflow",
           "nl": "Zet verticale luchtstroom"
         },
@@ -1065,7 +1166,8 @@
         "measure_temperature",
         "target_temperature",
         "onoff",
-        "3d_auto"
+        "3d_auto",
+        "vacant_property_mode"
       ],
       "capabilitiesOptions": {
         "measure_temperature": {
@@ -1089,8 +1191,8 @@
           }
         },
         "target_temperature": {
-          "min": 18,
-          "max": 30,
+          "min": 10,
+          "max": 33,
           "step": 0.5
         }
       },
@@ -1474,6 +1576,26 @@
           }
         }
       ]
+    },
+    "vacant_property_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "Vacant property mode",
+        "nl": "Leegstaand pand modus"
+      },
+      "getable": true,
+      "setable": true,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Vacant property mode turned on",
+        "nl": "Leegstaand pand modus aangezet"
+      },
+      "insightsTitleFalse": {
+        "en": "Vacant property mode turned off",
+        "nl": "Leegstaand pand modus uitgezet"
+      },
+      "uiQuickAction": false,
+      "uiComponent": "toggle"
     },
     "vertical_position": {
       "type": "enum",
