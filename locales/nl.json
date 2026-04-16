@@ -12,8 +12,7 @@
     "unavailable": "Apparaat is niet beschikbaar."
   },
   "warning": {
-    "accounts": "Bediening is uitgeschakeld. Account limiet van apparaat bereikt.",
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
-    "unregistered": "Apparaat kan niet bediend worden."
+    "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat."
   }
 }
