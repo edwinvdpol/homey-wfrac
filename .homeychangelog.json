@@ -91,5 +91,8 @@
   },
   "1.4.5": {
     "en": "Fix Homey (early 2019) issues."
+  },
+  "1.4.6": {
+    "en": "Added meter power capability. Added unregistered account warning."
   }
 }
