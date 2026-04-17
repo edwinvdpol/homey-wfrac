@@ -12,8 +12,7 @@
     "unavailable": "Device is unavailable."
   },
   "warning": {
-    "accounts": "Operation is disabled. Device account limit reached.",
     "firmware": "Device with firmware __firmware__ is not supported.",
-    "unregistered": "Device cannot be operated."
+    "unregistered": "Device cannot be operated. Reset the device's WiFi module."
   }
 }
