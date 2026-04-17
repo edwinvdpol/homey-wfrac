@@ -10,7 +10,8 @@
     "target_temperature",
     "onoff",
     "3d_auto",
-    "vacant_property_mode"
+    "vacant_property_mode",
+    "meter_power"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
