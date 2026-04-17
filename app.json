@@ -1168,9 +1168,7 @@
         "onoff",
         "3d_auto",
         "vacant_property_mode",
-        "meter_power",
-        "meter_power.today",
-        "meter_power.hour"
+        "meter_power"
       ],
       "capabilitiesOptions": {
         "measure_temperature": {
@@ -1191,24 +1189,6 @@
           "desc": {
             "en": "Outdoor temperature in degrees Celsius (°C)",
             "nl": "Buitentemperatuur in graden Celsius (°C)"
-          }
-        },
-        "meter_power": {
-          "title": {
-            "en": "Total energy",
-            "nl": "Totaal verbruik"
-          }
-        },
-        "meter_power.hour": {
-          "title": {
-            "en": "Energy this hour",
-            "nl": "Verbruik dit uur"
-          }
-        },
-        "meter_power.today": {
-          "title": {
-            "en": "Energy today",
-            "nl": "Verbruik vandaag"
           }
         },
         "target_temperature": {
