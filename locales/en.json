@@ -13,6 +13,7 @@
   },
   "warning": {
     "firmware": "Device with firmware __firmware__ is not supported.",
+    "refused": "Device is controlled by the remote control or another app. Try again in a minute.",
     "unregistered": "Device cannot be operated. Reset the device's WiFi module."
   }
 }

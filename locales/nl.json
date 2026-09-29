@@ -13,6 +13,7 @@
   },
   "warning": {
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
+    "refused": "Apparaat wordt bediend met de afstandsbediening of een andere app. Probeer het over een minuut opnieuw.",
     "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat."
   }
 }
