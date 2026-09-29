@@ -1166,6 +1166,7 @@
         "measure_temperature",
         "target_temperature",
         "onoff",
+        "thermostat_mode",
         "3d_auto",
         "vacant_property_mode",
         "meter_power"
