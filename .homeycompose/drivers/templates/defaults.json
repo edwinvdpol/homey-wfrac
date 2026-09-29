@@ -11,7 +11,8 @@
     "onoff",
     "3d_auto",
     "vacant_property_mode",
-    "meter_power"
+    "meter_power",
+    "measure_power"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
@@ -38,6 +39,9 @@
       "min": 10,
       "max": 33,
       "step": 0.5
+    },
+    "measure_power": {
+      "approximated": true
     }
   },
   "images": {
