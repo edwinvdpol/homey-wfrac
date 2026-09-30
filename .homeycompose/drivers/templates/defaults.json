@@ -11,7 +11,8 @@
     "onoff",
     "3d_auto",
     "vacant_property_mode",
-    "meter_power"
+    "meter_power",
+    "compressor_active"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {

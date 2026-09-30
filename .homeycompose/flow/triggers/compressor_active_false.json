@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Compressor stopped",
+    "nl": "Compressor gestopt"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the unit stopped cooling or heating, e.g. because the setpoint was reached or it was turned off.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de unit stopte met koelen of verwarmen, bijv. omdat de temperatuur bereikt is of hij uitgezet werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=compressor_active"
+    }
+  ]
+}
