@@ -19,5 +19,6 @@
     "en": "Compressor stopped",
     "nl": "Compressor gestopt"
   },
-  "uiComponent": "sensor"
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/compressor_active.svg"
 }
