@@ -12,6 +12,7 @@
     "unavailable": "Device is unavailable."
   },
   "warning": {
+    "error": "Device reports error __code__.",
     "firmware": "Device with firmware __firmware__ is not supported.",
     "unregistered": "Device cannot be operated. Reset the device's WiFi module."
   }
