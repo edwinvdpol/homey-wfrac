@@ -3,6 +3,7 @@
     "connecting": "Connecting..."
   },
   "error": {
+    "code": "Device reports error __code__.",
     "connection": "Device is not reachable.",
     "invalid_ip": "Manual IP address is invalid. Please check the address and try again.",
     "not_supported": "Device is not supported.",
@@ -12,7 +13,6 @@
     "unavailable": "Device is unavailable."
   },
   "warning": {
-    "error": "Device reports error __code__.",
     "firmware": "Device with firmware __firmware__ is not supported.",
     "unregistered": "Device cannot be operated. Reset the device's WiFi module."
   }
