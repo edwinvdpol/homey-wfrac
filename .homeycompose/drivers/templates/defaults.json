@@ -9,9 +9,12 @@
     "measure_temperature",
     "target_temperature",
     "onoff",
+    "thermostat_mode",
     "3d_auto",
     "vacant_property_mode",
-    "meter_power"
+    "meter_power",
+    "compressor_active",
+    "alarm_generic"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
@@ -38,6 +41,12 @@
       "min": 10,
       "max": 33,
       "step": 0.5
+    },
+    "alarm_generic": {
+      "title": {
+        "en": "Error",
+        "nl": "Storing"
+      }
     }
   },
   "images": {

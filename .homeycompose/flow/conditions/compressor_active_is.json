@@ -1,0 +1,16 @@
+{
+  "title": {
+    "en": "Compressor is !{{active|not active}}",
+    "nl": "Compressor is !{{actief|niet actief}}"
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=compressor_active"
+    }
+  ]
+}

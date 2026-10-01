@@ -1,0 +1,24 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Compressor active",
+    "nl": "Compressor actief"
+  },
+  "desc": {
+    "en": "Whether the unit is actually cooling or heating, rather than only being on (e.g. setpoint reached). On a multi-split this is the demand of this indoor unit.",
+    "nl": "Of de unit echt koelt of verwarmt, in plaats van alleen aan te staan (bijv. temperatuur bereikt). Bij een multi-split is dit de vraag van deze binnenunit."
+  },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Compressor started",
+    "nl": "Compressor gestart"
+  },
+  "insightsTitleFalse": {
+    "en": "Compressor stopped",
+    "nl": "Compressor gestopt"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/compressor_active.svg"
+}
