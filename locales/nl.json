@@ -3,6 +3,7 @@
     "connecting": "Bezig met verbinden..."
   },
   "error": {
+    "code": "Apparaat meldt storing __code__.",
     "connection": "Apparaat is niet bereikbaar.",
     "invalid_ip": "Handmatig IP-adres is ongeldig. Controleer het adres en probeer het opnieuw.",
     "not_supported": "Apparaat is niet ondersteund.",
@@ -12,7 +13,6 @@
     "unavailable": "Apparaat is niet beschikbaar."
   },
   "warning": {
-    "error": "Apparaat meldt storing __code__.",
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
     "refused": "Apparaat wordt bediend met de afstandsbediening of een andere app. Probeer het over een minuut opnieuw.",
     "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat."

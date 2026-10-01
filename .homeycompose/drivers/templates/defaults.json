@@ -14,7 +14,8 @@
     "vacant_property_mode",
     "meter_power",
     "compressor_active",
-    "alarm_generic"
+    "alarm_generic",
+    "measure_power"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
@@ -47,6 +48,9 @@
         "en": "Error",
         "nl": "Storing"
       }
+    },
+    "measure_power": {
+      "approximated": true
     }
   },
   "images": {
