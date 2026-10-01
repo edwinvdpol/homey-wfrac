@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Compressor started",
+    "nl": "Compressor gestart"
+  },
+  "hint": {
+    "en": "This flowcard triggers when the unit started actually cooling or heating.",
+    "nl": "Deze flowcard wordt geactiveerd wanneer de unit echt begon te koelen of verwarmen."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=wfrac&capabilities=compressor_active"
+    }
+  ]
+}

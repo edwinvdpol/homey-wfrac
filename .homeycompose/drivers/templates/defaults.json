@@ -13,6 +13,7 @@
     "3d_auto",
     "vacant_property_mode",
     "meter_power",
+    "compressor_active",
     "alarm_generic"
   ],
   "capabilitiesOptions": {

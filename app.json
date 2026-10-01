@@ -112,6 +112,48 @@
       },
       {
         "title": {
+          "en": "Compressor stopped",
+          "nl": "Compressor gestopt"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the unit stopped cooling or heating, e.g. because the setpoint was reached or it was turned off.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de unit stopte met koelen of verwarmen, bijv. omdat de temperatuur bereikt is of hij uitgezet werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=compressor_active"
+          }
+        ],
+        "id": "compressor_active_false"
+      },
+      {
+        "title": {
+          "en": "Compressor started",
+          "nl": "Compressor gestart"
+        },
+        "hint": {
+          "en": "This flowcard triggers when the unit started actually cooling or heating.",
+          "nl": "Deze flowcard wordt geactiveerd wanneer de unit echt begon te koelen of verwarmen."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=compressor_active"
+          }
+        ],
+        "id": "compressor_active_true"
+      },
+      {
+        "title": {
           "en": "Fan speed changed",
           "nl": "Ventilatorsnelheid is veranderd"
         },
@@ -254,6 +296,23 @@
           }
         ],
         "id": "3d_auto_is"
+      },
+      {
+        "title": {
+          "en": "Compressor is !{{active|not active}}",
+          "nl": "Compressor is !{{actief|niet actief}}"
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=wfrac&capabilities=compressor_active"
+          }
+        ],
+        "id": "compressor_active_is"
       },
       {
         "title": {
@@ -1170,6 +1229,7 @@
         "3d_auto",
         "vacant_property_mode",
         "meter_power",
+        "compressor_active",
         "alarm_generic"
       ],
       "capabilitiesOptions": {
@@ -1417,6 +1477,30 @@
       },
       "uiQuickAction": false,
       "uiComponent": "toggle"
+    },
+    "compressor_active": {
+      "type": "boolean",
+      "title": {
+        "en": "Compressor active",
+        "nl": "Compressor actief"
+      },
+      "desc": {
+        "en": "Whether the unit is actually cooling or heating, rather than only being on (e.g. setpoint reached). On a multi-split this is the demand of this indoor unit.",
+        "nl": "Of de unit echt koelt of verwarmt, in plaats van alleen aan te staan (bijv. temperatuur bereikt). Bij een multi-split is dit de vraag van deze binnenunit."
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Compressor started",
+        "nl": "Compressor gestart"
+      },
+      "insightsTitleFalse": {
+        "en": "Compressor stopped",
+        "nl": "Compressor gestopt"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/compressor_active.svg"
     },
     "fan_speed": {
       "type": "enum",
