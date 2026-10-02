@@ -97,5 +97,8 @@
   },
   "1.5.0": {
     "en": "Added live power and fix energy total. Added compressor active status. Add thermostat mode that follows the unit which fixes the thermostat UI component coloring. Drastically improved communication and error handling. Show errors reported by the unit."
+  },
+  "1.5.1": {
+    "en": "Added live power and fix energy total. Added compressor active status. Add thermostat mode that follows the unit which fixes the thermostat UI component coloring. Fix vacant property mode is condition card. Drastically improved communication and error handling. Show errors reported by the unit."
   }
 }
