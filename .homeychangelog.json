@@ -94,5 +94,8 @@
   },
   "1.4.6": {
     "en": "Added meter power capability. Added unregistered account warning."
+  },
+  "1.5.0": {
+    "en": "Added live power and fix energy total. Added compressor active status. Add thermostat mode that follows the unit which fixes the thermostat UI component coloring. Drastically improved communication and error handling. Show errors reported by the unit."
   }
 }
