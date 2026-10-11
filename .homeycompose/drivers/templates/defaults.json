@@ -15,7 +15,8 @@
     "meter_power",
     "compressor_active",
     "alarm_generic",
-    "measure_power"
+    "measure_power",
+    "external_control"
   ],
   "capabilitiesOptions": {
     "measure_temperature": {
