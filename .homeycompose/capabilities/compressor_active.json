@@ -20,5 +20,5 @@
     "nl": "Compressor gestopt"
   },
   "uiComponent": "sensor",
-  "icon": "/assets/capabilities/compressor_active.svg"
+  "icon": "/assets/images/capabilities/compressor_active.svg"
 }

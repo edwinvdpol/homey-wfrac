@@ -5,8 +5,8 @@
     "nl": "Externe bediening"
   },
   "desc": {
-    "en": "The unit was just operated by the remote control or another app. Homey holds back for 3 minutes so it doesn't get in the way, and live power is not updated meanwhile.",
-    "nl": "De unit werd net bediend met de afstandsbediening of een andere app. Homey houdt 3 minuten afstand om niet in de weg te zitten, en het vermogen wordt in die tijd niet bijgewerkt."
+    "en": "The unit was just operated by the remote control or another app. Homey pauzes for 3 minutes so it doesn't get in the way, and live power is not updated meanwhile.",
+    "nl": "De unit werd net bediend met de afstandsbediening of een andere app. Homey houdt 3 minuten pauze om niet in de weg te zitten, en het vermogen wordt in die tijd niet bijgewerkt."
   },
   "getable": true,
   "setable": false,
@@ -20,5 +20,5 @@
     "nl": "Externe bediening beëindigd"
   },
   "uiComponent": "sensor",
-  "icon": "/assets/capabilities/external_control.svg"
+  "icon": "/assets/images/capabilities/external_control.svg"
 }
