@@ -1228,6 +1228,7 @@
         "thermostat_mode",
         "3d_auto",
         "vacant_property_mode",
+        "vacant_property_active",
         "meter_power",
         "compressor_active",
         "alarm_generic",
@@ -1758,6 +1759,30 @@
           }
         }
       ]
+    },
+    "vacant_property_active": {
+      "type": "boolean",
+      "title": {
+        "en": "Vacant property mode active",
+        "nl": "Leegstaand pand actief"
+      },
+      "desc": {
+        "en": "Whether the unit reports that vacant property mode is on. It then only keeps the room at the vacant property temperature from the device settings.",
+        "nl": "Of de unit meldt dat leegstaand pand modus aan staat. De unit houdt de ruimte dan alleen op de temperatuur uit de apparaatinstellingen."
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Vacant property mode turned on",
+        "nl": "Leegstaand pand modus aangezet"
+      },
+      "insightsTitleFalse": {
+        "en": "Vacant property mode turned off",
+        "nl": "Leegstaand pand modus uitgezet"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/images/capabilities/vacant_property_active.svg"
     },
     "vacant_property_mode": {
       "type": "boolean",

@@ -12,6 +12,7 @@
     "thermostat_mode",
     "3d_auto",
     "vacant_property_mode",
+    "vacant_property_active",
     "meter_power",
     "compressor_active",
     "alarm_generic",
