@@ -10,7 +10,8 @@
     "operator_id": "Apparaat heeft geen operator ID. Verwijder dit apparaat en voeg deze opnieuw toe.",
     "protocol": "Apparaat ondersteunt geen beveiligde verbindingen. Schakel beveiligde verbindingen uit in de apparaatinstellingen.",
     "timeout": "Apparaat reageert niet.",
-    "unavailable": "Apparaat is niet beschikbaar."
+    "unavailable": "Apparaat is niet beschikbaar.",
+    "vacant_temperature": "Gebruik 10–17,5 °C (verwarmen) of 30,5–33 °C (koelen) voor leegstaand pand modus."
   },
   "warning": {
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
