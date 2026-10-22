@@ -1267,7 +1267,7 @@
           }
         },
         "measure_power": {
-          "approximated": true
+          "isApproximated": true
         },
         "thermostat_mode": {
           "setable": false,
@@ -1402,6 +1402,28 @@
               "hint": {
                 "en": "The IP address of the device as advertised via mDNS-SD.",
                 "nl": "Het IP-adres van het apparaat zoals geadverteerd via mDNS-SD."
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Energy",
+            "nl": "Energie"
+          },
+          "children": [
+            {
+              "id": "live_power",
+              "type": "checkbox",
+              "label": {
+                "en": "Measure live power",
+                "nl": "Vermogen meten"
+              },
+              "value": true,
+              "hint": {
+                "en": "Asks the unit for its operating current about once a minute while it is on, to show live power. Some indoor units react oddly to this request.",
+                "nl": "Vraagt de unit ongeveer eens per minuut, terwijl hij aan staat, om zijn stroomverbruik om het vermogen te tonen. Sommige binnenunits reageren vreemd op dit verzoek."
               }
             }
           ]

@@ -51,7 +51,7 @@
       }
     },
     "measure_power": {
-      "approximated": true
+      "isApproximated": true
     },
     "thermostat_mode": {
       "setable": false,
@@ -131,6 +131,18 @@
         },
         {
           "$extends": "ip_address_discovered"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Energy",
+        "nl": "Energie"
+      },
+      "children": [
+        {
+          "$extends": "live_power"
         }
       ]
     },
