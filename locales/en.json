@@ -15,6 +15,7 @@
   "warning": {
     "firmware": "Device with firmware __firmware__ is not supported.",
     "refused": "Device is controlled by the remote control or another app. Try again in a minute.",
-    "unregistered": "Device cannot be operated. Reset the device's WiFi module."
+    "unregistered": "Device cannot be operated. Reset the device's WiFi module.",
+    "vacant": "Vacant property mode is on: the unit only keeps the room at a minimum (or maximum) temperature. It turns off when you set a temperature between 18 and 30 °C, or turn off vacant property mode."
   }
 }

@@ -15,6 +15,7 @@
   "warning": {
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
     "refused": "Apparaat wordt bediend met de afstandsbediening of een andere app. Probeer het over een minuut opnieuw.",
-    "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat."
+    "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat.",
+    "vacant": "Leegstaand pand modus is aan: de unit houdt de ruimte alleen op een minimum- (of maximum)temperatuur. Deze gaat uit zodra je een temperatuur tussen 18 en 30 °C instelt, of leegstaand pand modus uitzet."
   }
 }
