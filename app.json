@@ -1271,6 +1271,7 @@
           "approximated": true
         },
         "thermostat_mode": {
+          "setable": false,
           "values": [
             {
               "id": "auto",
