@@ -6,7 +6,7 @@
   },
   "value": true,
   "hint": {
-    "en": "Asks the unit for its operating current about once a minute while it is on, to show live power. Turn this off if the unit changes its settings by itself, for example the operating mode switching to Auto: some indoor units react to this request.",
-    "nl": "Vraagt de unit ongeveer eens per minuut, terwijl hij aan staat, om zijn stroomverbruik om het vermogen te tonen. Zet dit uit als de unit uit zichzelf instellingen verandert, bijvoorbeeld de werkingsmodus die naar Automatisch springt: sommige binnenunits reageren op dit verzoek."
+    "en": "Asks the unit for its operating current about once a minute while it is on, to show live power. Some indoor units react oddly to this request.",
+    "nl": "Vraagt de unit ongeveer eens per minuut, terwijl hij aan staat, om zijn stroomverbruik om het vermogen te tonen. Sommige binnenunits reageren vreemd op dit verzoek."
   }
 }
