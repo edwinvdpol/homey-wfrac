@@ -1228,6 +1228,7 @@
         "thermostat_mode",
         "3d_auto",
         "vacant_property_mode",
+        "vacant_property_active",
         "meter_power",
         "compressor_active",
         "alarm_generic",
@@ -1256,8 +1257,8 @@
           }
         },
         "target_temperature": {
-          "min": 10,
-          "max": 33,
+          "min": 18,
+          "max": 30,
           "step": 0.5
         },
         "alarm_generic": {
@@ -1402,6 +1403,34 @@
               "hint": {
                 "en": "The IP address of the device as advertised via mDNS-SD.",
                 "nl": "Het IP-adres van het apparaat zoals geadverteerd via mDNS-SD."
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Vacant property mode",
+            "nl": "Leegstaand pand modus"
+          },
+          "children": [
+            {
+              "id": "vacant_target_temperature",
+              "type": "number",
+              "label": {
+                "en": "Temperature",
+                "nl": "Temperatuur"
+              },
+              "value": 10,
+              "min": 10,
+              "max": 33,
+              "step": 0.5,
+              "units": {
+                "en": "°C"
+              },
+              "hint": {
+                "en": "Temperature the unit keeps while vacant property mode is on: 10–17.5 °C heats to keep the room from getting too cold, 30.5–33 °C cools to keep it from getting too hot. Vacant property mode is turned on and off with its own toggle or flow cards. Only for units that support it.",
+                "nl": "Temperatuur die de unit aanhoudt zolang leegstaand pand modus aan staat: 10–17,5 °C verwarmt zodat het niet te koud wordt, 30,5–33 °C koelt zodat het niet te warm wordt. Leegstaand pand modus zet je aan en uit met zijn eigen schakelaar of flowkaarten. Alleen voor units die dit ondersteunen."
               }
             }
           ]
@@ -1731,6 +1760,30 @@
           }
         }
       ]
+    },
+    "vacant_property_active": {
+      "type": "boolean",
+      "title": {
+        "en": "Vacant property mode active",
+        "nl": "Leegstaand pand actief"
+      },
+      "desc": {
+        "en": "Whether the unit reports that vacant property mode is on. It then only keeps the room at the vacant property temperature from the device settings.",
+        "nl": "Of de unit meldt dat leegstaand pand modus aan staat. De unit houdt de ruimte dan alleen op de temperatuur uit de apparaatinstellingen."
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Vacant property mode turned on",
+        "nl": "Leegstaand pand modus aangezet"
+      },
+      "insightsTitleFalse": {
+        "en": "Vacant property mode turned off",
+        "nl": "Leegstaand pand modus uitgezet"
+      },
+      "uiComponent": "sensor",
+      "icon": "/assets/images/capabilities/vacant_property_active.svg"
     },
     "vacant_property_mode": {
       "type": "boolean",
