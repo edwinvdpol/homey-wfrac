@@ -1267,7 +1267,7 @@
           }
         },
         "measure_power": {
-          "approximated": true
+          "isApproximated": true
         },
         "thermostat_mode": {
           "values": [
