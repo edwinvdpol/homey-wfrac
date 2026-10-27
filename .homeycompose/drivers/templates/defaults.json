@@ -137,6 +137,18 @@
     {
       "type": "group",
       "label": {
+        "en": "Energy",
+        "nl": "Energie"
+      },
+      "children": [
+        {
+          "$extends": "live_power"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "label": {
         "en": "Product",
         "nl": "Product"
       },
