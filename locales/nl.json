@@ -10,12 +10,13 @@
     "operator_id": "Apparaat heeft geen operator ID. Verwijder dit apparaat en voeg deze opnieuw toe.",
     "protocol": "Apparaat ondersteunt geen beveiligde verbindingen. Schakel beveiligde verbindingen uit in de apparaatinstellingen.",
     "timeout": "Apparaat reageert niet.",
-    "unavailable": "Apparaat is niet beschikbaar."
+    "unavailable": "Apparaat is niet beschikbaar.",
+    "vacant_temperature": "Gebruik 10–17,5 °C (verwarmen) of 30,5–33 °C (koelen) voor leegstaand pand modus."
   },
   "warning": {
     "firmware": "Apparaat met firmware __firmware__ wordt niet ondersteund.",
     "refused": "Apparaat wordt bediend met de afstandsbediening of een andere app. Probeer het over een minuut opnieuw.",
     "unregistered": "Apparaat kan niet bediend worden. Reset de WiFi module van het apparaat.",
-    "vacant": "Leegstaand pand modus is aan: de unit houdt de ruimte alleen op een minimum- (of maximum)temperatuur. Deze gaat uit zodra je een temperatuur tussen 18 en 30 °C instelt, of leegstaand pand modus uitzet."
+    "vacant": "Leegstaand pand modus is aan: de unit houdt de ruimte op de temperatuur uit de apparaatinstellingen. Zet hem uit met de schakelaar leegstaand pand modus."
   }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "number",
+  "label": {
+    "en": "Temperature",
+    "nl": "Temperatuur"
+  },
+  "value": 10,
+  "min": 10,
+  "max": 33,
+  "step": 0.5,
+  "units": {
+    "en": "°C"
+  },
+  "hint": {
+    "en": "Temperature the unit keeps while vacant property mode is on: 10–17.5 °C heats to keep the room from getting too cold, 30.5–33 °C cools to keep it from getting too hot. Vacant property mode is turned on and off with its own toggle or flow cards. Only for units that support it.",
+    "nl": "Temperatuur die de unit aanhoudt zolang leegstaand pand modus aan staat: 10–17,5 °C verwarmt zodat het niet te koud wordt, 30,5–33 °C koelt zodat het niet te warm wordt. Leegstaand pand modus zet je aan en uit met zijn eigen schakelaar of flowkaarten. Alleen voor units die dit ondersteunen."
+  }
+}
